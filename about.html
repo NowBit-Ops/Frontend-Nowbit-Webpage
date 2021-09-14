@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NowBit - ¿Quiénes Somos?</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body onload="setTeamMembers()">
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        <!-- Menu Start -->
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo-light.png" alt="" class="logo-light" height="48" />
+                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="48" />
+                </a>
+            </div>
+            <div class="buy-button">
+                <a href="contact.html" class="btn btn-primary"><i class="mdi mdi-phone-classic"></i> Contáctanos</a>
+            </div>
+            <!--end login button-->
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="has-submenu"><a href="javascript:void(0)">Soluciones</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="solutions-search.html">Búsqueda</a></li>
+                            <li><a href="solutions-observability.html">Observabilidad</a></li>
+                            <li><a href="solutions-security.html">Seguridad</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu"><a href="javascript:void(0)">Servicios</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="services-consulting.html">consultoría</a></li>
+                            <li><a href="services-managed.html">Servicios Administrados</a></li>
+                            <li><a href="services-support.html">Soluciones como Servicio</a></li>
+                            <!-- <li><a href="services-training.html">Entrenamiento</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Nosotros</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="about.html">¿Quienes somos?</a></li>
+                            <li><a href="join-team.html">Únete al Equipo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog-grid.html">Comunidad</a></li>
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+        <!--end end-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+
+
+    <!-- Start home -->
+    <section class="bg-half page-next-level" style="background: url('./images/About/Nowbit_banner.png') center center;">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center text-white">
+                        <h4 class="text-uppercase title mb-4">¿Quiénes somos?</h4>
+                        <ul class="page-next d-inline-block mb-0">
+                            <li><a href="index.html" class="text-uppercase font-weight-bold">Inicio</a></li>
+                            <!-- <li><a href="#" class="text-uppercase font-weight-bold">Pages</a></li>  -->
+                            <li>
+                                <span class="text-uppercase text-white font-weight-bold">¿Quiénes somos?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- ABOUT US START -->
+    <section class="section" style="border-bottom: 1px solid rgba(221, 220, 220, 0.473);">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- LOGO DE PRUEBA CAMBIAR IMAGEN-->
+                <div class="col-lg-5 col-md-4">
+                    <img src="./images/About/logo-dark800x800.png" class="img-fluid rounded" alt="">
+                </div>
+
+                <div class="col-lg-7 col-md-8">
+                    <div class="about-desc ml-lg-4">
+                        <h4 class="text-dark">Sobre Nosotros</h4>
+
+                        <p class="text-muted justify-text">Creamos oportunidades que nos permiten construir sueños a
+                            través de retos satisfactorios y apalancadores de nuestro crecimiento personal,
+                            profesional y social, construyendo y comercializando soluciones de tecnología
+                            informática de búsqueda, observabilidad y seguridad soportadas en tecnologías innovadoras.
+
+                        </p>
+                        <p class="text-muted justify-text">
+                            Nuestro equipo de ingeniería está certificado, con el fin de garantizar que nuestras
+                            soluciones observan e incluyen las mejores prácticas definidas por los fabricantes
+                            para el diseño e implementación de las tecnologías que utilizamos para construir las
+                            soluciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US END -->
+    <!-- UNICOS START -->
+    <section class="section" style="background: url('images/About/Ladrillos.png') center center;">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="app-about-content">
+                        <div class="app-about-desc text-white justify-text">
+                            <h4 class="text-white mb-3"> ¿Qué nos hace únicos?</h4>
+                            <p class=" text-white"><b>Foco:</b> Únicos en Colombia enfocados en las
+                                soluciones Elastic, somos Partner nivel Elite (el más alto).</p>
+                            <p class="text-white"><b>Calidad:</b> Enfocarnos permite ofrecer calidad
+                                en nuestro servicio.</p>
+                            <p class="text-white"><b>Experiencia:</b> En todas las soluciones Elastic.
+                            </p>
+                            <p class="text-white"><b>Certificados:</b> El equipo más certificado en todo LATAM y en
+                                constante entrenamiento.
+                            <p class="text-white"><b>Metódicos:</b> Usamos las mejores prácticas de la
+                                industria para un servicio diferencial.</p>
+                            <p class="text-white"><b>Apasionados:</b> Pasión por la tecnología y lo
+                                que podemos hacer con ella. Nos comprometemos con la gente, sean nuestros colaboradores
+                                o nuestros clientes. Por esa razón, nuestra prioridad siempre será su satisfacción por
+                                encima de cualquier evento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-4"></div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="./images/About/48.png" class="img-fluid rounded shadow" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- UNICOS END -->
+
+    <!-- SECCION-->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- LOGO DE PRUEBA CAMBIAR IMAGEN-->
+                <div class="col-lg-5 col-md-4">
+                    <img src="./images/About/Equipo2.png " class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-7 col-md-8">
+                    <div class="about-desc ml-lg-4">
+                        <h4 class="text-dark">Nuestra Historia</h4>
+                        <p class="text-muted justify-text"><b>NowBit</b> nació por el amor a la tecnología y a Elastic
+                            Stack que
+                            sentimos un grupo de familiares y amigos que aprendimos a utilizar, implementar
+                            y construir soluciones basadas en esta tecnología. Este sueño comenzó en el 2019 y
+                            ha ido creciendo paso a paso con esfuerzo, dedicación y pie de fuerza gracias a la
+                            constancia,
+                            compromiso y sentido de pertenecía de cada una de las personas que hace parte de nuestra
+                            creciente
+                            familia. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- COUNTER START -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title title-line pb-5 text-dark ">Algunos miembros de nuestra familia</h4>
+                        <!--   <p class="text-muted para-desc mx-auto mb-1"></p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="team-box position-relative overflow-hidden text-center bg-white">
+                        <div class="team-img position-relative overflow-hidden d-block">
+                            <img src="./images/Team/JeysonG.png" alt="" id="img0" class="img-fluid d-block rounded">
+                            <div class="team-name p-2 rounded-bottom">
+                                <h6 class="text-white mb-0 text-simple" id="name0"></h6>
+                            </div>
+                        </div>
+                        <div class="team-content text-center pb-0 pt-3">
+                            <div class="">
+                                <p class="mb-0 text-dark font-weight-bold text-simple" id="work0"></p>
+                                <p class="text-muted mb-0 text-simple" id="desc0"></p>
+                                <ul class="list-unstyled social-icon mt-3 mb-0">
+                                    <li class="list-inline-item" id="git0"><a id="giturl0" href="" class="rounded"><i
+                                                class="mdi mdi-github-circle"></i></a></li>
+                                    <li class="list-inline-item" id="linkdin0"><a id="linkdinurl0" href=""
+                                            class="rounded"><i class="mdi mdi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="team-box position-relative overflow-hidden text-center bg-white">
+                        <div class="team-img position-relative overflow-hidden d-block">
+                            <img src="./images/Team/JeysonG.png" alt="" id="img1" class="img-fluid d-block rounded">
+                            <div class="team-name p-2 rounded-bottom">
+                                <h6 class="text-white mb-0 text-simple" id="name1"></h6>
+                            </div>
+                        </div>
+                        <div class="team-content text-center pb-0 pt-3">
+                            <div class="">
+                                <p class="mb-0 text-dark font-weight-bold text-simple" id="work1"></p>
+                                <p class="text-muted mb-0 text-simple" id="desc1"></p>
+                                <ul class="list-unstyled social-icon mt-3 mb-0">
+                                    <li class="list-inline-item" id="git1"><a id="giturl1" href="" class="rounded"><i
+                                                class="mdi mdi-github-circle"></i></a></li>
+                                    <li class="list-inline-item" id="linkdin1"><a id="linkdinurl1" href=""
+                                            class="rounded"><i class="mdi mdi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="team-box position-relative overflow-hidden text-center bg-white">
+                        <div class="team-img position-relative overflow-hidden d-block">
+                            <img src="./images/Team/JeysonG.png" alt="" id="img2" class="img-fluid d-block rounded">
+                            <div class="team-name p-2 rounded-bottom">
+                                <h6 class="text-white mb-0 text-simple" id="name2"></h6>
+                            </div>
+                        </div>
+                        <div class="team-content text-center pb-0 pt-3">
+                            <div class="">
+                                <p class="mb-0 text-dark font-weight-bold text-simple" id="work2"></p>
+                                <p class="text-muted mb-0 text-simple" id="desc2"></p>
+                                <ul class="list-unstyled social-icon mt-3 mb-0">
+                                    <li class="list-inline-item" id="git2"><a id="giturl2" href="" class="rounded"><i
+                                                class="mdi mdi-github-circle"></i></a></li>
+                                    <li class="list-inline-item" id="linkdin2"><a id="linkdinurl2" href=""
+                                            class="rounded"><i class="mdi mdi-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COUNTER END -->
+
+    <!-- ABOUT CLIENTS START -->
+    <div class="section bg-light ">
+        <div class="container pb-4 ">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title title-line pb-5 text-dark">Compañías que confían en nosotros</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/1.png" height="50" alt="">
+                </div>
+                <!--end col-->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/2.png" height="50" alt="">
+                </div>
+                <!--end col-->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/3.png" height="50" alt="">
+                </div>
+                <!--end col-->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/4.png" height="50" alt="">
+                </div>
+                <!--end col-->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/5.png" height="50" alt="">
+                </div>
+                <!--end col-->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/13.png" height="50" alt="">
+                </div>
+                <!--end col-->
+            </div>
+            <div class="row align-items-center" style="justify-content: center">
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/10.png" height="50" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/6.png" height="50" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/9.png" height="50" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/7.png" height="50" alt="">
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/8.png" height="50" alt="">
+                </div>
+            </div>
+            <div class="row align-items-center" style="justify-content: center">
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/12.png" height="50" alt="">
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
+                    <img src="images/clients/16.png" height="50" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT CLIENTS END -->
+
+
+    <!-- COUNTER START -->
+    <!--
+    <section class="section bg-light">
+        <div class="container">
+            <div class="blog-post-counter">
+                <div class="row" id="counter">
+                    <div class="col-md-3 col-6 border-right">
+                        <div class="p-4">
+                            <div class="blog-post counter-content text-center">
+                                <h1 class="counter-value font-weight-light text-dark mb-2" data-count="2030">0</h1>
+                                <p class="counter-name text-muted f-15 text-uppercase mb-2">Jobs</p>
+                                <i class="mdi mdi-account-multiple h3 text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 border-right">
+                        <div class="p-4">
+                            <div class="blog-post counter-content text-center">
+                                <h1 class="counter-value font-weight-light text-dark mb-2" data-count="3500">0</h1>
+                                <p class="counter-name text-muted f-15 text-uppercase mb-2">Applications</p>
+                                <i class="mdi mdi-file h3 text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 border-right">
+                        <div class="p-4">
+                            <div class="blog-post counter-content text-center">
+                                <h1 class="counter-value font-weight-light text-dark mb-2" data-count="1250">0</h1>
+                                <p class="counter-value-name text-muted f-15 text-uppercase mb-2">Companies</p>
+                                <i class="mdi mdi-bank h3 text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="p-4">
+                            <div class="blog-post counter-content text-center">
+                                <h1 class="counter-value font-weight-light text-dark mb-2" data-count="4000">0</h1>
+                                <p class="counter-name text-muted f-15 text-uppercase mb-2">Employers</p>
+                                <i class="mdi mdi-account-group h3 text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- COUNTER END -->
+
+    <!--Footer start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="javascript:void(0)"><img src="images/logo-light.png" height="20" alt=""></a>
+                    <p class="mt-4 text-simple">NowBit, expertos en soluciones de búsqueda, observabilidad y seguridad
+                        utilizando el
+                        Elastic Stack.</p>
+                    <ul class="social-icon social list-inline mb-0">
+                        <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/NowBit/"
+                                class=""><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=573053009589&text=Buenos%20días,%20me%20gustaría%20recibir%20más%20información,%20estoy%20interesado%20en%20conocer%20más%20sobre%20Elastic."
+                                class=""><i class="mdi mdi-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/company/nowbit1"
+                                class=""><i class="mdi mdi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title">Nuestra Empresa</p>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="about.html" class="text-foot text-simple"><i
+                                    class="mdi mdi-chevron-right "></i>¿Quienes
+                                Somos?</a></li>
+                        <li><a href="contact.html" class="text-foot text-simple"><i class="mdi mdi-chevron-right"></i>
+                                Contacto</a>
+                        </li>
+                        <li><a href="blog-grid.html" class="text-foot text-simple"><i class="mdi mdi-chevron-right"></i>
+                                Comunidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title">Información Legal</p>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="https://nowbit.s3.amazonaws.com/PoliticaSARLAFTNowBit.pdf"
+                                class="text-foot text-simple"><i class="mdi mdi-chevron-right"></i>Política SARLAFT</a>
+                        </li>
+                        <li><a href="nowbit_tratamiento_datos.html" class="text-foot text-simple"><i
+                                    class="mdi mdi-chevron-right"></i>Política de tratamiento de datos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title f-17">Contacto</p>
+                    <ul class="list-unstyled text-foot mt-4 mb-0">
+                        <li class="text-simple">+(57) 305 300 9589</li>
+                        <li class="text-simple">Info@Nowbit.co</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+    <!-- <script src="js/counter.int.js"></script> no se usa devido a que no hay datos para contar-->
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/team-member.js"></script>
+
+</body>
+
+</html>
