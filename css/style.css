@@ -2613,3 +2613,13 @@ hr {
   text-align: justify;
   text-justify: inter-word;
 }
+
+@media (max-width: 425px) {
+  .tabla {
+    display: block;
+    overflow-x: auto;
+  }
+}
+.t2em{
+  font-size: 2em;
+}
