@@ -5,10 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NowBit - Comunidad</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Themesdesign" />
-    <script type="text/javascript" src="./js/job-aply.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156161383-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156161383-1');
+    </script>
+
+    <meta name="description"
+        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <link rel="canonical" href="https://www.nowbit.co" />
+    <meta name="title" property="og:title" content="NowBit - Comunidad" />
+    <meta name="description" property="og:description"
+        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <meta name="image" property="og:image" content="images/logo-Blue.png" />
+    <!-- <meta property="og:image:width" content="500" /> -->
+    <!-- <meta property="og:image:height" content="500" /> -->
+    <meta property="og:url" content="https://www.nowbit.co" />
+    <meta property="og:site_name" content="NowBit - Comunidad" />
+    <meta property="og:type" content="website" />
+
+    <meta name="Elasticsearch" content="Search, Observation, Security" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NowBit - Comunidad" />
+    <meta name="twitter:description"
+        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <meta name="twitter:image" content="images/logo-Blue.png" />
+    <meta name="keywords"
+        content="NowBit, Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability, Búsqueda, Colombia" />
+    <meta name="author" content="NowBit" />
+    
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Bootstrap core CSS -->
@@ -280,18 +311,19 @@
                                             Beats
                                         </h2>
                                         <p class="justify-text">
-                                            Aunque no hace parte del acrónimo ELK, los Beats son clientes 
-                                            ligeros de recolección de información que, al igual que Logstash, 
+                                            Aunque no hace parte del acrónimo ELK, los Beats son clientes
+                                            ligeros de recolección de información que, al igual que Logstash,
                                             cargan información en Elasticsearch.
                                         </p>
                                         <p class="justify-text">
-                                            Existen Beats de todo tipo, algunos permiten saber la disponibilidad 
-                                            y métricas de desempeño de servidores, otros recolectan métricas de 
+                                            Existen Beats de todo tipo, algunos permiten saber la disponibilidad
+                                            y métricas de desempeño de servidores, otros recolectan métricas de
                                             servicios cloud como Lambda, información del tráfico de red de un Sistema
-                                             Operativo, logs de Kubernetes, métricas de instancias en AWS o Azure, 
-                                             desempeño de Apache, SQL entre muchas otras opciones. Además de los Beats 
-                                             propios de Elastic, la comunidad OpenSource tiene publicados muchos otros Beats. 
-                                             ¡Nuestro equipo también ha publicado Beats!
+                                            Operativo, logs de Kubernetes, métricas de instancias en AWS o Azure,
+                                            desempeño de Apache, SQL entre muchas otras opciones. Además de los Beats
+                                            propios de Elastic, la comunidad OpenSource tiene publicados muchos otros
+                                            Beats.
+                                            ¡Nuestro equipo también ha publicado Beats!
                                         </p>
                                     </div>
                                 </div>
@@ -309,9 +341,9 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                El módulo de Aplication Monitoring del Elastic Stack fue incluido recientemente 
-                                y permite monitorear el desempeño de aplicaciones desarrolladas en diferentes tipos 
-                                de lenguajes. Utiliza módulos por cada tipo de lenguaje que envían la información del 
+                                El módulo de Aplication Monitoring del Elastic Stack fue incluido recientemente
+                                y permite monitorear el desempeño de aplicaciones desarrolladas en diferentes tipos
+                                de lenguajes. Utiliza módulos por cada tipo de lenguaje que envían la información del
                                 comportamiento del código directamente a Elasticsearch.
                             </p>
                         </div>
@@ -323,9 +355,11 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Toda la información recolectada e indexada en Elasticsearch puede ser analizada para 
-                                buscar anomalías y patrones que permitan predecir comportamientos o alertar comportamientos 
-                                inusuales. El módulo de Machine Learning permite gobernar todas esas funcionalidades para 
+                                Toda la información recolectada e indexada en Elasticsearch puede ser analizada para
+                                buscar anomalías y patrones que permitan predecir comportamientos o alertar
+                                comportamientos
+                                inusuales. El módulo de Machine Learning permite gobernar todas esas funcionalidades
+                                para
                                 hacer que los datos generen mayor valor.
                             </p>
                         </div>
@@ -340,23 +374,25 @@
                                 Este conjunto de herramientas conforman la arquitectura de Elastic Stack:
                             </p>
                         </div>
-                       
+
                         <div class="container py-4">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-lg-6 text-center mb-4">
                                     <img class="img-fluid" src="./images/Tecnologias/9.png" style="height: 300px;"
-                                    alt="" title="">
+                                        alt="" title="">
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="job-detail-desc mx-5">
-                                        <p class="justify-text"> 
-                                            En la capa superior del Stack se encuentra Kibana, en el medio Elasticsearch 
-                                            y en la parte de abajo Beats y Logstash como herramientas de recolección e inserción de información.
+                                        <p class="justify-text">
+                                            En la capa superior del Stack se encuentra Kibana, en el medio Elasticsearch
+                                            y en la parte de abajo Beats y Logstash como herramientas de recolección e
+                                            inserción de información.
                                         </p>
-                                        <p class="justify-text"> 
-                                            Con lo anterior, no queremos decir que únicamente con Beats y Logstash 
-                                            sea posible insertar información en Elasticsearch, puedes incluso insertar 
-                                            datos desde los lenguajes de programación más comunes así como haciendo uso del API REST.
+                                        <p class="justify-text">
+                                            Con lo anterior, no queremos decir que únicamente con Beats y Logstash
+                                            sea posible insertar información en Elasticsearch, puedes incluso insertar
+                                            datos desde los lenguajes de programación más comunes así como haciendo uso
+                                            del API REST.
                                         </p>
                                     </div>
                                 </div>
@@ -371,11 +407,14 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Ahora bien, entendiendo qué es el Elastic Stack, ya es más fácil saber qué se puede hacer con él.
+                                Ahora bien, entendiendo qué es el Elastic Stack, ya es más fácil saber qué se puede
+                                hacer con él.
                             </p>
                             <p class="justify-text">
-                                Desde el punto de vista de Elastic, cada tipo de necesidad atendida con Elastic Stack se denomina 
-                                un caso de uso. Hay muchos documentados en el sitio web de Elastic, pero también hay muchos otros 
+                                Desde el punto de vista de Elastic, cada tipo de necesidad atendida con Elastic Stack se
+                                denomina
+                                un caso de uso. Hay muchos documentados en el sitio web de Elastic, pero también hay
+                                muchos otros
                                 que Elastic ni siquiera conoce.
                             </p>
                             <p class="justify-text">
@@ -390,12 +429,12 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Cuando realizas una búsqueda de un vehículo en Uber, así como 
-                                el seguimiento en tiempo real de tu servicio, todo esto está 
-                                funcionando sobre Elasticsearch. Para el caso de los conductores 
-                                de Uber, los mapas de calor en ala cuidad, en donde se encuentran 
-                                las tarifas dinámicas, son posibles gracias a Elasticsearch. Toda 
-                                esta información es generada por la aplicación, indexada por Elasticsearch 
+                                Cuando realizas una búsqueda de un vehículo en Uber, así como
+                                el seguimiento en tiempo real de tu servicio, todo esto está
+                                funcionando sobre Elasticsearch. Para el caso de los conductores
+                                de Uber, los mapas de calor en ala cuidad, en donde se encuentran
+                                las tarifas dinámicas, son posibles gracias a Elasticsearch. Toda
+                                esta información es generada por la aplicación, indexada por Elasticsearch
                                 y utilizada por la misma aplicación y todo, en tiempo real.
                             </p>
                         </div>
@@ -408,8 +447,10 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                La famosa aplicación de citas, utiliza el poder de búsqueda de Elasticsearch para cruzar intereses comunes, ubicación geográfica y otras 
-                                variables para analizar y entregar en tiempo real, las coincidencias más relevantes para los usuarios son procesadas y analizadas en tiempo real.
+                                La famosa aplicación de citas, utiliza el poder de búsqueda de Elasticsearch para cruzar
+                                intereses comunes, ubicación geográfica y otras
+                                variables para analizar y entregar en tiempo real, las coincidencias más relevantes para
+                                los usuarios son procesadas y analizadas en tiempo real.
                             </p>
                         </div>
 
@@ -421,15 +462,15 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Wallmart tiene alrededor de 11.000 tiendas en más de 23 países y 
-                                gracias a Elasticsearch, pueden saber con exactitud cuántos bananos 
-                                venden en todas sus tiendas en un solo punto y en tiempo real. Esta 
-                                información permite tomar decisiones oportunas en la cadena de abastecimiento 
+                                Wallmart tiene alrededor de 11.000 tiendas en más de 23 países y
+                                gracias a Elasticsearch, pueden saber con exactitud cuántos bananos
+                                venden en todas sus tiendas en un solo punto y en tiempo real. Esta
+                                información permite tomar decisiones oportunas en la cadena de abastecimiento
                                 de Wallmart, manteniendo al día la operación de los almacenes.
                             </p>
                         </div>
 
-                        
+
                         <div class="job-detail-desc mx-5">
                             <h3>
                                 Despegar
@@ -437,10 +478,11 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Cuando realizas la búsqueda de un billete para tu próximo vuelo, 
-                                Elasticsearch está detrás de todo ello, la gran cantidad de 
-                                información no sólo de Despegar, sino también de terceros que 
-                                se debe analizar para que el sitio web funcione, se logra gracias a la eficiencia de Elasticsearch.
+                                Cuando realizas la búsqueda de un billete para tu próximo vuelo,
+                                Elasticsearch está detrás de todo ello, la gran cantidad de
+                                información no sólo de Despegar, sino también de terceros que
+                                se debe analizar para que el sitio web funcione, se logra gracias a la eficiencia de
+                                Elasticsearch.
                             </p>
                         </div>
 
@@ -451,14 +493,14 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Blizzard utiliza Elasticsearch para analizar en 
-                                tiempo real los registros de comportamiento de los juegos en línea de Blizzard, 
-                                esto les permite decidir oportunamente las acciones para corregir fallas pues encuentran 
+                                Blizzard utiliza Elasticsearch para analizar en
+                                tiempo real los registros de comportamiento de los juegos en línea de Blizzard,
+                                esto les permite decidir oportunamente las acciones para corregir fallas pues encuentran
                                 anomalías haciendo uso del módulo de Machine Learning dentro de Elastic.
                             </p>
                         </div>
 
-                        
+
                         <div class="job-detail-desc mx-5">
                             <h2>
                                 ¿Y en Colombia?
@@ -466,23 +508,24 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                En Colombia existen varios casos de uso para Elasticsearch, algunos de ellos los resumiremos a continuación:
+                                En Colombia existen varios casos de uso para Elasticsearch, algunos de ellos los
+                                resumiremos a continuación:
                             </p>
                         </div>
 
                         <div class="job-detail-desc mx-5">
-                            <h3>                        
+                            <h3>
                                 Rappi
                             </h3>
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                gran parte de las búsquedas del primer unicornio Colombiano, 
-                                se ejecutan a través de Elastic, permitiendo que los aproximadamente 
+                                gran parte de las búsquedas del primer unicornio Colombiano,
+                                se ejecutan a través de Elastic, permitiendo que los aproximadamente
                                 3 pedidos por segundo que se ejecutan en la plataforma sean posibles.
                             </p>
                         </div>
-                        
+
                         <div class="job-detail-desc mx-5">
                             <h3>
                                 Agilitix
@@ -490,12 +533,12 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                La capa de virtualización de escritorios y aplicaciones 
-                                entregada por el integrador Agilitix en uno de sus clientes, 
-                                es monitoreada a través de Elastic Stack, permitiendo a las 
-                                áreas de tecnología saber el consumo de aplicaciones a nivel 
-                                de detalle de procesos de Sistema Operativo y usuarios en tiempo real. 
-                                Toda la información es recolectada a través de más de 1000 Beats instalados 
+                                La capa de virtualización de escritorios y aplicaciones
+                                entregada por el integrador Agilitix en uno de sus clientes,
+                                es monitoreada a través de Elastic Stack, permitiendo a las
+                                áreas de tecnología saber el consumo de aplicaciones a nivel
+                                de detalle de procesos de Sistema Operativo y usuarios en tiempo real.
+                                Toda la información es recolectada a través de más de 1000 Beats instalados
                                 y alrededor de 5 bases de datos SQL consultadas con Logstash.
                             </p>
                         </div>
@@ -507,8 +550,8 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Grandes entidades financieras colombianas, 
-                                realizan el monitoreo de su infraestructura tecnológica bancaria a 
+                                Grandes entidades financieras colombianas,
+                                realizan el monitoreo de su infraestructura tecnológica bancaria a
                                 través de Elastic Stack, así como el análisis de archivos de logs complejos.
                             </p>
                         </div>
@@ -521,8 +564,9 @@
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
                                 Estos son solamente algunos de los casos de uso que se conocen sobre Elastic,
-                                 pero hay muchos, muchos más. Algunos, ni siquiera son conocidos por Elastic;
-                                  el hecho de ser de código abierto abre un sin número de posibilidades de aplicaciones del Stack.
+                                pero hay muchos, muchos más. Algunos, ni siquiera son conocidos por Elastic;
+                                el hecho de ser de código abierto abre un sin número de posibilidades de aplicaciones
+                                del Stack.
                             </p>
                         </div>
 
@@ -533,13 +577,13 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                En resumen, Elastic Stack no es solamente para búsqueda, 
-                                es una plataforma de analítica, análisis y visualización 
-                                de grandes volúmenes de información históricos y en tiempo 
+                                En resumen, Elastic Stack no es solamente para búsqueda,
+                                es una plataforma de analítica, análisis y visualización
+                                de grandes volúmenes de información históricos y en tiempo
                                 real, que permite una gran variedad de aplicaciones en la industria
-                                 para solucionar necesidades específicas, con la ventaja del código 
-                                 abierto que abre aún más el nivel de personalización y especificación 
-                                 de cada posible necesidad y por consiguiente, su solución.
+                                para solucionar necesidades específicas, con la ventaja del código
+                                abierto que abre aún más el nivel de personalización y especificación
+                                de cada posible necesidad y por consiguiente, su solución.
                             </p>
                         </div>
                     </div>

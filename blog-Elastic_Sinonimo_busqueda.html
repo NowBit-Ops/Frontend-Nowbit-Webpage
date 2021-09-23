@@ -5,10 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NowBit - Comunidad</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Themesdesign" />
-    <script type="text/javascript" src="./js/job-aply.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156161383-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156161383-1');
+    </script>
+
+    <meta name="description"
+        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <link rel="canonical" href="https://www.nowbit.co" />
+    <meta name="title" property="og:title" content="NowBit - Comunidad" />
+    <meta name="description" property="og:description"
+        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <meta name="image" property="og:image" content="images/logo-Blue.png" />
+    <!-- <meta property="og:image:width" content="500" /> -->
+    <!-- <meta property="og:image:height" content="500" /> -->
+    <meta property="og:url" content="https://www.nowbit.co" />
+    <meta property="og:site_name" content="NowBit - Comunidad" />
+    <meta property="og:type" content="website" />
+
+    <meta name="Elasticsearch" content="Search, Observation, Security" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NowBit - Comunidad" />
+    <meta name="twitter:description"
+        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <meta name="twitter:image" content="images/logo-Blue.png" />
+    <meta name="keywords"
+        content="NowBit, Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability, Búsqueda, Colombia" />
+    <meta name="author" content="NowBit" />
+    
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Bootstrap core CSS -->
@@ -110,14 +141,14 @@
     <!-- Navbar End -->
 
     <!-- Start home -->
-    <section class="bg-half page-next-level"
-        style="background: url('./images/blogs-image/3.png') center center;">
+    <section class="bg-half page-next-level" style="background: url('./images/blogs-image/3.png') center center;">
         <div class="bg-overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="text-center text-white">
-                        <h4 class="text-uppercase title mb-4">¿Elasticsearch sinónimo de búsqueda eficiente?: como implementar búsqueda de sinónimos
+                        <h4 class="text-uppercase title mb-4">¿Elasticsearch sinónimo de búsqueda eficiente?: como
+                            implementar búsqueda de sinónimos
                         </h4>
                         <ul class="page-next d-inline-block mb-0">
                             <li><a href="index.html" class="text-uppercase font-weight-bold">Inicio</a></li>
@@ -149,13 +180,20 @@
                                 <div class="col-lg-7">
                                     <div class="job-detail-desc mx-5">
                                         <p class="justify-text">
-                                            A la hora de implementar un buscador algo tan simple como la falta de sinónimos
-                                             puede perjudicar la experiencia de uso. Pero ¿por qué digo que es algo simple? 
-                                             ¿Cómo se le explica a una máquina que "cerveza" y "pola" hacen referencia a lo mismo?. 
-                                             En un primer acercamiento a este problema, se podría pensar que la solución es cargarle 
-                                             a Elasticsearch el diccionario de la Real academia de la lengua española, sin embargo, la 
-                                             implementación de sinónimos debe realizarse de una manera más estratégica que por fuerza bruta.
-                                            Antes de revisar el cómo implementar, es válido aclarar ciertos conceptos, entre ellos está la definición de <b>grafo</b>.
+                                            A la hora de implementar un buscador algo tan simple como la falta de
+                                            sinónimos
+                                            puede perjudicar la experiencia de uso. Pero ¿por qué digo que es algo
+                                            simple?
+                                            ¿Cómo se le explica a una máquina que "cerveza" y "pola" hacen referencia a
+                                            lo mismo?.
+                                            En un primer acercamiento a este problema, se podría pensar que la solución
+                                            es cargarle
+                                            a Elasticsearch el diccionario de la Real academia de la lengua española,
+                                            sin embargo, la
+                                            implementación de sinónimos debe realizarse de una manera más estratégica
+                                            que por fuerza bruta.
+                                            Antes de revisar el cómo implementar, es válido aclarar ciertos conceptos,
+                                            entre ellos está la definición de <b>grafo</b>.
                                         </p>
                                     </div>
                                 </div>
@@ -167,56 +205,66 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Según el Dr. Jesús Soto profesor en la Universidad Católica 
-                                San Antonio de Murcia: <b><i> Un grafo es un conjunto de puntos, denominados vértices o nodos, 
-                                en el espacio, que están conectados por un conjunto de líneas, denominadas aristas.</i></b> 
+                                Según el Dr. Jesús Soto profesor en la Universidad Católica
+                                San Antonio de Murcia: <b><i> Un grafo es un conjunto de puntos, denominados vértices o
+                                        nodos,
+                                        en el espacio, que están conectados por un conjunto de líneas, denominadas
+                                        aristas.</i></b>
                                 Se suele representar de la siguiente forma:
                             </p>
                         </div>
 
                         <div class="job-detail-desc mx-5 text-center py-4">
-                            <img class="img-fluid" src="./images/blogs-image/grafo.png" style="height: 300px;"
-                            alt="" title="">
+                            <img class="img-fluid" src="./images/blogs-image/grafo.png" style="height: 300px;" alt=""
+                                title="">
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Adicional mente, los grafos también pueden tener 
-                                la característica de ser dirigidos o no. Esta característica 
-                                de dirección es similar a como funcionan las vías de un solo 
-                                sentido por donde circulan los autos, relacionando únicamente 
-                                en una dirección los nodos del grafo. Para el siguiente ejemplo 
-                                se ve como partiendo de <b>a</b> se puede ir a <b>b</b> pero partiendo de <b>b</b> no podríamos desplazarnos a <b>a</b>.
+                                Adicional mente, los grafos también pueden tener
+                                la característica de ser dirigidos o no. Esta característica
+                                de dirección es similar a como funcionan las vías de un solo
+                                sentido por donde circulan los autos, relacionando únicamente
+                                en una dirección los nodos del grafo. Para el siguiente ejemplo
+                                se ve como partiendo de <b>a</b> se puede ir a <b>b</b> pero partiendo de <b>b</b> no
+                                podríamos desplazarnos a <b>a</b>.
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5 text-center py-4">
-                            <img class="img-fluid" src="./images/blogs-image/grafo2.png" style="height: 100px;"
-                            alt="" title="">
+                            <img class="img-fluid" src="./images/blogs-image/grafo2.png" style="height: 100px;" alt=""
+                                title="">
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Ya con esto podríamos definir un diccionario de sinónimos como un conjunto de 
-                                grafos. Sin embargo, es menester decir que hay un factor más a tener en cuenta, 
-                                y es la derivación lingüística que pueden tener las palabras; pues esto es propio 
-                                de cada idioma y poseen sus reglas gramaticales. Las derivaciones lingüísticas no 
-                                deben ser tenidas en cuenta para realizar el diccionario de sinónimos, pues esto 
-                                resultaría en un trabajo extenso y poco eficiente. La manera de realizar esto es 
-                                mediante el <b>Stemming</b>, el cual es un método para reducir una palabra a su raíz siguiendo 
-                                las reglas gramaticales correspondientes al idioma en el que se esté trabajando. Por ejemplo, 
-                                se está implementando un buscador para una aplicación que consiste en la búsqueda de locales, 
-                                para este caso nos interesa que si una persona busca florero, flor o floristería obtenga los 
-                                mismos resultados puesto que comparten la misma raíz, en vez de implementar un diccionario de 
+                                Ya con esto podríamos definir un diccionario de sinónimos como un conjunto de
+                                grafos. Sin embargo, es menester decir que hay un factor más a tener en cuenta,
+                                y es la derivación lingüística que pueden tener las palabras; pues esto es propio
+                                de cada idioma y poseen sus reglas gramaticales. Las derivaciones lingüísticas no
+                                deben ser tenidas en cuenta para realizar el diccionario de sinónimos, pues esto
+                                resultaría en un trabajo extenso y poco eficiente. La manera de realizar esto es
+                                mediante el <b>Stemming</b>, el cual es un método para reducir una palabra a su raíz
+                                siguiendo
+                                las reglas gramaticales correspondientes al idioma en el que se esté trabajando. Por
+                                ejemplo,
+                                se está implementando un buscador para una aplicación que consiste en la búsqueda de
+                                locales,
+                                para este caso nos interesa que si una persona busca florero, flor o floristería obtenga
+                                los
+                                mismos resultados puesto que comparten la misma raíz, en vez de implementar un
+                                diccionario de
                                 sinónimos para este fin implementamos un <b>Stemmer</b>.
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5 text-center py-4">
-                            <img class="img-fluid" src="./images/blogs-image/raiz.webp" style="height: 200px;"
-                            alt="" title="">
+                            <img class="img-fluid" src="./images/blogs-image/raiz.webp" style="height: 200px;" alt=""
+                                title="">
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Una vez entendidos estos conceptos, se podría elaborar el diccionario de sinónimos. 
-                                Es importante recordar que este debe ser implementado estratégicamente más que con fuerza 
-                                bruta, por eso aquí hay una serie de consejos para implementar sinónimos en Elasticsearch de 
+                                Una vez entendidos estos conceptos, se podría elaborar el diccionario de sinónimos.
+                                Es importante recordar que este debe ser implementado estratégicamente más que con
+                                fuerza
+                                bruta, por eso aquí hay una serie de consejos para implementar sinónimos en
+                                Elasticsearch de
                                 forma eficiente.
                             </p>
                         </div>
@@ -224,12 +272,14 @@
                             <ul class="">
                                 <li>
                                     <p class="justify-text">
-                                        Conoce que buscan tus usuarios, si puedes guardar sus búsquedas para analizar qué es lo que buscan y con qué frecuencia ¡hazlo!
+                                        Conoce que buscan tus usuarios, si puedes guardar sus búsquedas para analizar
+                                        qué es lo que buscan y con qué frecuencia ¡hazlo!
                                     </p>
                                 </li>
                                 <li>
                                     <p class="justify-text">
-                                        Crea una tabla de Excel donde puedas organizar tus sinónimos. Recuerda que hay palabras que pueden tener más de un sinónimo.
+                                        Crea una tabla de Excel donde puedas organizar tus sinónimos. Recuerda que hay
+                                        palabras que pueden tener más de un sinónimo.
                                     </p>
                                 </li>
                                 <li>
@@ -249,7 +299,8 @@
                                 </li>
                                 <li>
                                     <p class="justify-text">
-                                        Los filtros dentro de un analyzer interactúan entre ellos, y se ejecutan en orden de declaración. Ten en cuenta en donde colocas el filtro de sinónimos.
+                                        Los filtros dentro de un analyzer interactúan entre ellos, y se ejecutan en
+                                        orden de declaración. Ten en cuenta en donde colocas el filtro de sinónimos.
                                     </p>
                                 </li>
                             </ul>
@@ -257,10 +308,10 @@
 
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Para el ejemplo, se va a suponer que se está implementando un 
-                                buscador para una aplicación dedicada a encontrar locales cercanos. 
-                                Una vez hemos seguido los consejos y ya tenemos definido nuestro diccionario 
-                                de sinónimos, es momento de implementarlo. Lo que haremos es crear un índice 
+                                Para el ejemplo, se va a suponer que se está implementando un
+                                buscador para una aplicación dedicada a encontrar locales cercanos.
+                                Una vez hemos seguido los consejos y ya tenemos definido nuestro diccionario
+                                de sinónimos, es momento de implementarlo. Lo que haremos es crear un índice
                                 con las siguientes propiedades:
                             </p>
                         </div>
@@ -275,9 +326,9 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Para definir el filtro que se va a encargar del stemming simplemente      
-                                necesitamos definir un filtro del tipo stemmer y en name,      
-                                especificarle el idioma del stemmer 
+                                Para definir el filtro que se va a encargar del stemming simplemente
+                                necesitamos definir un filtro del tipo stemmer y en name,
+                                especificarle el idioma del stemmer
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5">
@@ -287,9 +338,10 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Cuando determinamos el tipo de sinónimos en Synonym_graph, 
+                                Cuando determinamos el tipo de sinónimos en Synonym_graph,
                                 Elasticsearch va a entender los sinónimos como un grafo no dirigido,
-                                 por ejemplo "Sombrero, gorra, cachucha, chistera ", sería un grafo de la siguiente forma:
+                                por ejemplo "Sombrero, gorra, cachucha, chistera ", sería un grafo de la siguiente
+                                forma:
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5 text-center py-4">
@@ -297,13 +349,13 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                En este grafo vemos que Sombrero es sinónimo de gorra, 
-                                cachucha y chistera, a su vez sombrero es sinónimo de chistera, 
-                                cachucha y gorra, y así con cada uno de los términos que componen 
-                                el grafo, sin embargo si seleccionamos el tipo de sinónimo Synonym 
-                                Elasticsearch entenderá el diccionario de sinónimos como un grafo direccional 
-                                partiendo del primer elemento que se le suministre. Continuando con el ejemplo 
-                                anterior el grafo en este caso tendría la siguiente forma: 
+                                En este grafo vemos que Sombrero es sinónimo de gorra,
+                                cachucha y chistera, a su vez sombrero es sinónimo de chistera,
+                                cachucha y gorra, y así con cada uno de los términos que componen
+                                el grafo, sin embargo si seleccionamos el tipo de sinónimo Synonym
+                                Elasticsearch entenderá el diccionario de sinónimos como un grafo direccional
+                                partiendo del primer elemento que se le suministre. Continuando con el ejemplo
+                                anterior el grafo en este caso tendría la siguiente forma:
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5 text-center py-4">
@@ -311,10 +363,10 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                En este grafo Sombrero tiene 3 sinónimos que son gorra, cachucha y chistera, 
-                                pero únicamente es así, gorra no tiene sinónimos, ni los otros elementos. 
-                                Sin embargo, podemos dar cada definición por aparte lo cual daría como 
-                                resultado un grafo más complejo, por ejemplo, definimos el siguiente diccionario: 
+                                En este grafo Sombrero tiene 3 sinónimos que son gorra, cachucha y chistera,
+                                pero únicamente es así, gorra no tiene sinónimos, ni los otros elementos.
+                                Sin embargo, podemos dar cada definición por aparte lo cual daría como
+                                resultado un grafo más complejo, por ejemplo, definimos el siguiente diccionario:
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5 text-center py-4">
@@ -330,22 +382,23 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Donde nos dice que gorra, sombrero y cachucha son sinónimos entre si, 
-                                sombrero tiene tres sinónimos que son gorra cachucha y chistera 
+                                Donde nos dice que gorra, sombrero y cachucha son sinónimos entre si,
+                                sombrero tiene tres sinónimos que son gorra cachucha y chistera
                                 y chistera únicamente es sinónimo de Sombrero
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5">
                             <h4>
-                                3. Definición de sinónimos: 
+                                3. Definición de sinónimos:
                             </h4>
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Los sinónimos en Elasticsearch se pueden definir usando dos notaciones: 
-                                Apache Solr o wordnet synonyms. Estos pueden definirse como un arreglo de 
-                                strings donde cada string es un sinónimo, o puede definirse por medio un 
-                                archivo donde este todo el diccionario suministrando la ruta del servidor donde este se encuentra.
+                                Los sinónimos en Elasticsearch se pueden definir usando dos notaciones:
+                                Apache Solr o wordnet synonyms. Estos pueden definirse como un arreglo de
+                                strings donde cada string es un sinónimo, o puede definirse por medio un
+                                archivo donde este todo el diccionario suministrando la ruta del servidor donde este se
+                                encuentra.
                             </p>
                         </div>
                         <div class="job-detail-desc mx-5">
@@ -355,7 +408,9 @@
                         </div>
                         <div class="job-detail-desc mx-5">
                             <p class="justify-text">
-                                Al estar contenidos dentro de un Analyzer podemos aplicar este diccionario de sinónimos a campos determinados, y tener múltiples diccionarios dependiendo de la naturaleza del campo.
+                                Al estar contenidos dentro de un Analyzer podemos aplicar este diccionario de sinónimos
+                                a campos determinados, y tener múltiples diccionarios dependiendo de la naturaleza del
+                                campo.
                             </p>
                         </div>
 
