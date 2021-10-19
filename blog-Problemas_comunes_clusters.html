@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NowBit - Comunidad</title>
+    <title>NowBit - Los 10 problemas más comunes en clusters de Elasticsearch</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156161383-1"></script>
@@ -16,28 +16,32 @@
         gtag('config', 'UA-156161383-1');
     </script>
 
-    <meta name="description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <meta name="description" content="En NowBit ofrecemos un servicio de diagnóstico para clientes que usan
+        Elasticsearch, nuestro >Elastic Quick Review. En éste artículo. consolidamos los hallazgos más comunes
+        que hemos encontrado luego de ejecutar decenas de EQR" />
+
     <link rel="canonical" href="https://www.nowbit.co" />
-    <meta name="title" property="og:title" content="NowBit - Comunidad" />
+    <meta name="title" property="og:title"
+        content="NowBit - Los 10 problemas más comunes en clusters de Elasticsearch" />
     <meta name="description" property="og:description"
         content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <meta name="image" property="og:image" content="images/logo-Blue.png" />
+    <meta name="image" property="og:image" content="./images/blogs-image/blog-grid-mini/cluster-mini.png" />
     <!-- <meta property="og:image:width" content="500" /> -->
     <!-- <meta property="og:image:height" content="500" /> -->
     <meta property="og:url" content="https://www.nowbit.co" />
-    <meta property="og:site_name" content="NowBit - Comunidad" />
+    <meta property="og:site_name" content="NowBit - Los 10 problemas más comunes en clusters de Elasticsearch" />
     <meta property="og:type" content="website" />
 
     <meta name="Elasticsearch" content="Search, Observation, Security" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NowBit - Comunidad" />
-    <meta name="twitter:description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <meta name="twitter:image" content="images/logo-Blue.png" />
+    <meta name="twitter:title" content="NowBit - Los 10 problemas más comunes en clusters de Elasticsearch" />
+    <meta name="twitter:description" content="En NowBit ofrecemos un servicio de diagnóstico para clientes que usan
+        Elasticsearch, nuestro >Elastic Quick Review. En éste artículo. consolidamos los hallazgos más comunes
+        que hemos encontrado luego de ejecutar decenas de EQR" />
+    <meta name="twitter:image" content="./images/blogs-image/blog-grid-mini/cluster-mini.png" />
     <meta name="keywords"
-        content="NowBit, Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability, Búsqueda, Colombia" />
+        content="NowBit, Elasticsearch, cluster, problemas comunes, Elastic Quick Review, Obserbability, Búsqueda" />
     <meta name="author" content="NowBit" />
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -141,7 +145,7 @@
 
     <!-- Start home -->
     <section class="bg-half page-next-level"
-        style="background: url('./images/blogs-image/blog-Elastic_en_detalle/1.png') center center;">
+        style="background: url('./images/blogs-image/cluster.webp') center center;">
         <div class="bg-overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -175,7 +179,7 @@
                     <div class="row">
                         <div class="col-lg-12 ">
                             <div class="job-detail border rounded mt-2 p-4">
-                                <div class="job-detail-desc justify-text mx-5">
+                                <div class="job-detail-desc justify-text mx-3">
                                     <p class="justify-text">
                                         En <b>NowBit</b> ofrecemos un servicio de diagnóstico para clientes que usan
                                         Elasticsearch,
@@ -183,23 +187,19 @@
                                         hallazgos más comunes
                                         que hemos encontrado luego de ejecutar decenas de EQR:
                                     </p>
-
                                 </div>
-
-
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         1. Oversharding:
                                     </h2>
                                 </div>
-
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5"> El overshardin es un problema muy
-                                        común en despliegues de Elasticsearch, para entenderlo, es necesario
-                                        dar un resumen de la base del funcionamiento de un cluster de Elasticsearch.
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text"> El overshardin es un problema muy común en despliegues
+                                        de Elasticsearch, para entenderlo, es necesario dar un resumen de la base del
+                                        funcionamiento de un cluster de Elasticsearch.
                                     </p>
 
-                                    <p class="justify-text mx-5"> En primer lugar, un cluster se compone de varios nodos
+                                    <p class="justify-text"> En primer lugar, un cluster se compone de varios nodos
                                         de Elasticsearch (al menos 3 en entornos productivos), en un cluster puedes
                                         alojar uno o más índices, donde viven los datos (documentos en formato json) y
                                         finalmente, cada índice se compone de uno o más shards (de dos tipos: primarios
@@ -207,13 +207,13 @@
                                         una instancia de Lucene (sobre lo que está escrito Elasticsearch), funcionando
                                         para ofrecer las capacidades que Elasticsearch ofrece.
                                     </p>
-                                    <p class="justify-text mx-5">
+                                    <p class="justify-text">
                                         Los shards tienen un costo, requieren CPU, memoria y almacenamiento para su
                                         funcionamiento, un problema de oversharing no es más que la incapacidad del
                                         hardware para soportar la cantidad de shards creados.
                                     </p>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -258,21 +258,22 @@
 
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         2. Cluster en estado amarillo o rojo:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5"> Este es una situación más común de lo que se puedan
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text"> Este es una situación más común de lo que se puedan
                                         imaginar y sucede porque los shards (de los que hablamos antes), no se están
                                         asignando correctamente:
                                     </p>
                                     <ul>
                                         <li>
                                             <p>
-                                                Estado amarillo: Sucede cuando los shards tipo réplica no tienen nodos
+                                                <b>Estado amarillo</b>: Sucede cuando los shards tipo réplica no tienen
+                                                nodos
                                                 de
                                                 Elasticsearch para instanciarse, en general es porque el cluster no
                                                 tiene
@@ -283,13 +284,14 @@
                                         </li>
                                         <li>
                                             <p>
-                                                Estado rojo: Sucede porque un shard primario no se puede instanciar,
+                                                <b>Estado rojo:</b> Sucede porque un shard primario no se puede
+                                                instanciar,
                                                 esto puede ser grave, porque los datos no podrán ser leídos ni escritos.
                                             </p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -326,20 +328,14 @@
 
 
 
-
-
-
-
-
-
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         3. Login anónimo:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">Muchos clientes utilizan la licencia Basic de
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">Muchos clientes utilizan la licencia Basic de
                                         Elasticsearch (gratuita) y tienen la idea errónea de que esa licencia no tiene
                                         características de seguridad (en versiones anteriores era así), por lo que no
                                         habilitan la autenticación lo que trae como consecuencia problemas de seguridad
@@ -348,7 +344,7 @@
                                     </p>
 
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -387,14 +383,14 @@
 
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         4. Campos mal definidos y deficiencias usando ECS:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">La creciente adopción de los casos de uso de Elastic en
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">La creciente adopción de los casos de uso de Elastic en
                                         términos de Observabilidad (Logging, Metrics, APM) y Seguridad (XDR y SIEM),
                                         hizo necesario que Elastic definiera un estándar de nomenclatura para los campos
                                         en los índices de Elasticsearch, esto se conoce como el Elastic Common Schema.
@@ -412,7 +408,7 @@
 
                                     </p>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -450,14 +446,14 @@
 
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         5. Explosión de mapping:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">Esta es una situación común que genera problemas de
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">Esta es una situación común que genera problemas de
                                         desempeño e indisponibilidad y es una consecuencia usual del punto anterior.
                                         Aquí es necesario explicar un aspecto técnico: La razón por la cuál
                                         Elasticsearch es capaz de devolver datos prácticamente en tiempo real, es porque
@@ -478,7 +474,7 @@
 
                                     </p>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -521,14 +517,14 @@
 
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         6. Cluster de menos de 3 nodos y Split Brain:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">
                                         Una de las preguntas más comunes que realizan los
                                         clientes es: ¿por qué es necesario tener un cluster de al menos 3 nodos en
                                         ambientes productivos?, básicamente es por dos razones:
@@ -554,7 +550,7 @@
                                         datos es tener al menos tres nodos en un entorno productivo.
                                     </p>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -575,7 +571,12 @@
                                             <h5>Estrategias de solución:</h5>
                                             <ul>
                                                 <li>
-                                                    Utilizar cluster de 3 nodos o más en entornos productivos.
+                                                    Implementar clusters con al menos 3 nodos de Elasticsearch para
+                                                    entornos productivos.
+                                                </li>
+                                                <li>
+                                                    Habilitar el parámetro minimum_master_nodes en la configuración de
+                                                    Elasticsearch.
                                                 </li>
                                             </ul>
                                         </li>
@@ -586,14 +587,14 @@
 
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         7. Ausencia de Snapshots:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">
                                         Los snapshots son el mecanismo de copias de respaldo de la información
                                         almacenada en Elasticsearch; en muchos casos, los clientes tienen la percepción
                                         errada que las réplicas de la información en Elasticsearch es suficiente como
@@ -617,7 +618,7 @@
 
                                     </p>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -650,14 +651,14 @@
                                 </div>
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         8. Ciclos de actualización demasiado largos:
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">
                                         Elastic tiene una política de versiones con lanzamientos en intervalos muy
                                         cortos; muchos clientes tienen políticas de administración de plataformas con
                                         actividades de actualización cada año o cada semestre, dado que Elastic lanza
@@ -669,7 +670,7 @@
                                     </p>
 
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -709,15 +710,15 @@
 
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         9. Cluster no operativo por espacio en disco:
 
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">
                                         Por defecto, cuando el espacio ocupado es del 85% en los nodos de Elasticsearch,
                                         automáticamente el cluster coloca todos los índices en estado de solo lectura.
                                         Esto genera que el cluster queda inoperativo generando indisponibilidad
@@ -725,7 +726,7 @@
                                     </p>
 
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -766,15 +767,15 @@
                                 </div>
 
 
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <h2>
                                         10. Subutilización de las capacidades de Elasticsearch:
 
                                     </h2>
                                 </div>
 
-                                <div class="job-detail-desc">
-                                    <p class="justify-text mx-5">
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">
                                         Aunque suene algo contradictorio sobre los puntos anteriores, aquí nos referimos
                                         más a los casos de uso. Muchas compañías incursionan en Elastic con un caso de
                                         uso específico entre los tres principales:
@@ -820,7 +821,7 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    <p class="justify-text mx-5">
+                                    <p class="justify-text mx-3">
                                         Es muy común que un cliente que usa Elastic en un caso de uso, no sepa que puede
                                         usar el mismo producto para cualquiera de los otros casos de uso. También es
                                         común que un cliente que adopta un caso de uso, no tenga claro que hay
@@ -840,7 +841,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="job-detail-desc mx-5">
+                                <div class="job-detail-desc mx-3">
                                     <ul>
                                         <li>
                                             <h5>Causas principales:</h5>
@@ -866,7 +867,21 @@
                                         </li>
                                     </ul>
                                 </div>
-
+                                <div class="job-detail-desc mx-3">
+                                    <p class="justify-text">
+                                        Si llegaste hasta aquí, agradecemos tu lectura y como recompensa, si usas
+                                        Elastic en tu organización, podemos realizar de forma gratuita un <b>Elastic
+                                            Quick
+                                            Review</b> en tu despliegue, simplemente déjanos tus datos en nuestro <a
+                                            href="contact.html#form"> formulario de
+                                            contacto</a>.
+                                    </p>
+                                    <p class="justify-text">
+                                        Finalmente, si alguno de éstos problemas te son familiares y necesitas apoyo
+                                        para resolverlos, cuenta con nuestro apoyo, ponte en <a href="contact.html">contacto</a> con nosotros para
+                                        ayudarte.
+                                    </p>
+                                </div>
 
 
 
@@ -882,10 +897,10 @@
                                 <div class="col-12 ">
                                     <p class="text-simple"><b>Compartir:</b></p>
                                     <a target="_blank"
-                                        href="http://www.facebook.com/sharer.php?u=https://www.nowbit.co/blog-Elastic_Elastic_en_detalle.html"
+                                        href="http://www.facebook.com/sharer.php?u=https://www.nowbit.co/blog-Problemas_comunes_clusters.html"
                                         class=""><i class="mdi mdi-facebook"></i></a>
                                     <a target="_blank"
-                                        href="https://twitter.com/intent/tweet?url=https://www.nowbit.co/blog-Elastic_Elastic_en_detalle.html"
+                                        href="https://twitter.com/intent/tweet?url=https://www.nowbit.co/blog-Problemas_comunes_clusters.html"
                                         class="p-2"><i class="mdi mdi-twitter"></i></a>
                                 </div>
                             </div>
