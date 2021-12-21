@@ -115,23 +115,6 @@ const team = [
       "github": "https://github.com/jaguzmanb1",
       "linkedin": "https://www.linkedin.com/in/jhon-guzm%C3%A1n-baham%C3%B3n-612931154/",
       "whatsapp": 3016998783
-    },
-    {
-      "name": "Daniel Serrano",
-      "work": "Linux Admin",
-      "about": "\"Ríete en la cara del peligro\". Ups, no. ‘Hazlo tú mismo’. Sí, eso es.",
-      "photo": "./images/Team/DanielS.png",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/daniel-serrano-b46a8788/",
-      "whatsapp": 3192675020
-    },
-    {
-      "name": "Raquel Acero",
-      "work": "Elastic Technical Architect",
-      "about": "\"Nada es imposible, simplemente es matemáticamente improbable\" ",
-      "photo": "./images/Team/RaquelA.png",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/aceroraquel/",
     }
   ]
 
