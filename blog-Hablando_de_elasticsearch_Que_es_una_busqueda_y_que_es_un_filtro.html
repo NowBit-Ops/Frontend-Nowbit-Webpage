@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NowBit - Comunidad</title>
+    <title>NowBit - Qué es una busqueda y qué es un filtro? Elasticsearch</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156161383-1"></script>
@@ -16,30 +16,33 @@
         gtag('config', 'UA-156161383-1');
     </script>
 
-    <meta name="description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
+    <meta name="description" content="Para aquellos que no estén muy familiarizados con Elasticsearch, los conceptos
+    de búsqueda y filtro pueden llegar a confundirse; para entenderlos con
+    facilidad, abordaremos primero las definiciones de búsqueda y filtro" />
+
     <link rel="canonical" href="https://www.nowbit.co" />
-    <meta name="title" property="og:title" content="NowBit - Comunidad" />
-    <meta name="description" property="og:description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <meta name="image" property="og:image" content="images/logo-Blue.png" />
+    <meta name="title" property="og:title" content="NowBit - Qué es una busqueda y qué es un filtro? Elasticsearch" />
+    <meta name="description" property="og:description" content="Para aquellos que no estén muy familiarizados con Elasticsearch, los conceptos
+        de búsqueda y filtro pueden llegar a confundirse; para entenderlos con
+        facilidad, abordaremos primero las definiciones de búsqueda y filtro" />
+    <meta name="image" property="og:image" content="./images/blogs-image/blog-grid-mini/cluster-mini.png" />
     <!-- <meta property="og:image:width" content="500" /> -->
     <!-- <meta property="og:image:height" content="500" /> -->
     <meta property="og:url" content="https://www.nowbit.co" />
-    <meta property="og:site_name" content="NowBit - Comunidad" />
+    <meta property="og:site_name" content="NowBit - Qué es una busqueda y qué es un filtro? Elasticsearch" />
     <meta property="og:type" content="website" />
 
     <meta name="Elasticsearch" content="Search, Observation, Security" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NowBit - Comunidad" />
-    <meta name="twitter:description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <meta name="twitter:image" content="images/logo-Blue.png" />
+    <meta name="twitter:title" content="NowBit - Qué es una busqueda y qué es un filtro? Elasticsearch" />
+    <meta name="twitter:description" content="Para aquellos que no estén muy familiarizados con Elasticsearch, los conceptos
+    de búsqueda y filtro pueden llegar a confundirse; para entenderlos con
+    facilidad, abordaremos primero las definiciones de búsqueda y filtro" />
+    <meta name="twitter:image" content="./images/blogs-image/blog-grid-mini/cluster-mini.png" />
     <meta name="keywords"
-        content="NowBit, Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability, Búsqueda, Colombia" />
+        content="NowBit, Elasticsearch, cluster, Elastic Quick Review, Obserbability, Búsqueda, filtro" />
     <meta name="author" content="NowBit" />
-    
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Bootstrap core CSS -->
@@ -84,7 +87,7 @@
                 </a>
             </div>
             <div class="buy-button">
-                <a href="contact.html" class="btn btn-primary"><i class="mdi mdi-phone-classic"></i> Contáctanos</a>
+                <a href="contact.html" class="btn btn-primary"><i class="mdi mdi-phone-classic"></i>Contáctanos</a>
             </div>
             <!--end login button-->
             <!-- End Logo container-->
@@ -141,6 +144,8 @@
     <!-- Navbar End -->
 
     <!-- Start home -->
+
+
     <section class="bg-half page-next-level"
         style="background: url('./images/blogs-image/blog-elastic-busqueda-o-filtro/a27d24_36ded574eacd4c7b8ab95a0499ae7a6a_mv2.jpg') center center;">
         <div class="bg-overlay"></div>
@@ -150,7 +155,6 @@
                     <div class="text-center text-white">
                         <h4 class="text-uppercase title mb-4">¡Hablando de Elasticsearch: ¿Qué es una búsqueda y qué es
                             un filtro?
-
                         </h4>
                         <ul class="page-next d-inline-block mb-0">
                             <li><a href="index.html" class="text-uppercase font-weight-bold">Inicio</a></li>
@@ -178,7 +182,7 @@
                     <div class="row">
                         <div class="col-lg-12 ">
                             <div class="job-detail border rounded mt-2 p-4">
-                                <div class="job-detail-desc justify-text mx-5">
+                                <div class="job-detail-desc justify-text ">
 
                                     <p class="justify-text">
                                         Para aquellos que no estén muy familiarizados con Elasticsearch, los conceptos
@@ -191,7 +195,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12 job-detail-desc justify-text ">
-                                        <p class=" mx-5">
+                                        <p class="">
                                             Empecemos por las definiciones. El diccionario de la RAE define Buscar cómo
                                             un "sistema de selección en un proceso según criterios previamente
                                             establecidos" Por ejemplo, todos los días cuando me levanto, voy a la
@@ -201,10 +205,10 @@
                                         </p>
                                     </div>
                                     <div clas="col-md-6 col-sm-12" style="text-align: center;">
-                                        <img src="./images/blogs-image/blog-elastic-busqueda-o-filtro/2.webp" alt="">
+                                        <img src="./images/blogs-image/blog-elastic-busqueda-o-filtro/2.webp" alt="" class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
-                                <div class="job-detail-desc justify-text mx-5">
+                                <div class="job-detail-desc justify-text">
 
                                     <p class="justify-text">
                                         La acción que hago cuando saco el café, es una búsqueda. Entre mi DataSet
@@ -217,9 +221,9 @@
                                 </div>
                                 <div style="text-align: center;">
                                     <img src="./images/blogs-image/blog-elastic-busqueda-o-filtro/a27d24_36ded574eacd4c7b8ab95a0499ae7a6a_mv2.jpg"
-                                        alt="">
+                                        alt="" class="img-fluid mx-auto d-block">
                                 </div>
-                                <div class="job-detail-desc justify-text m-5">
+                                <div class="job-detail-desc justify-text">
 
                                     <p class="justify-text">
                                         Teniendo estos conceptos más claros, podemos entender el comportamiento de un
@@ -233,7 +237,7 @@
                                     </p>
                                 </div>
                                 <div class="job-detail-desc ">
-                                    <ol class=" mx-5">
+                                    <ol class="">
                                         <li>
                                             Los campos numéricos, por ejemplo, un precio; son campos que por su
                                             naturaleza deben ser un filtro.
@@ -252,7 +256,7 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div class="job-detail-desc justify-text mx-5">
+                                <div class="job-detail-desc justify-text">
 
                                     <p class="justify-text">
                                         Veamos un ejemplo real, al realizar una búsqueda en eBay. En la imagen podemos
@@ -260,7 +264,7 @@
                                     </p>
                                 </div>
                                 <div class="job-detail-desc ">
-                                    <ol class=" mx-5">
+                                    <ol class="">
                                         <li>
                                             En el numeral 1 la búsqueda, que para este caso es una Nintendo Switch.
                                         </li>
@@ -276,9 +280,9 @@
                                 </div>
                                 <div style="text-align: center;">
                                     <img src="./images/blogs-image/blog-elastic-busqueda-o-filtro/08b617_54bd71f5af084e87b12fc2a227d6b624_mv2.png"
-                                        alt="">
+                                        alt="" class="img-fluid mx-auto d-block">
                                 </div>
-                                <div class="job-detail-desc justify-text mx-5">
+                                <div class="job-detail-desc justify-text">
 
                                     <p class="justify-text">
                                         Retomando la metáfora del café, seria una experiencia similar a buscar café con
@@ -288,7 +292,7 @@
                                         que los usuarios se sientan cómodos usando nuestro buscador.
                                     </p>
                                 </div>
-                                <div class="col-12 ">
+                                <div class="col-12">
                                     <p class="text-simple"><b>Compartir:</b></p>
                                     <a target="_blank"
                                         href="http://www.facebook.com/sharer.php?u=https://www.nowbit.co/blog-Hablando_de_elasticsearch_Que_es_una_busqueda_y_que_es_un_filtro.html"
@@ -302,9 +306,10 @@
                                 <a href="contact.html" class="btn btn-primary"><i class="mdi mdi-phone-classic"></i>
                                     Contactanos</a>
                             </div>
-                            
+
                         </div>
                     </div>
+
                     <div class="job-detail text-center job-single border rounded p-4 mt-2">
                         <div class="job-single-img ">
                             <img src="images/Team/JuanM.png" alt="" class="img-fluid mx-auto d-block"
@@ -319,48 +324,18 @@
                             </li>
 
                             <li class="list-inline-item">
-                                <p class="text-muted mb-2"><i class="mdi mdi-calendar mr-1"></i>Jun 26</p>
+                                <p class="text-muted mb-2"><i class="mdi mdi-calendar mr-1"></i>Jun 26, 2020</p>
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
 
         </div>
         </div>
     </section>
-    <!-- JOB SINGLE END -->
 
-    <!-- subscribe start -->
-    <!--
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-5">
-                    <div class="float-left position-relative notification-icon mr-2">
-                        <i class="mdi mdi-bell-outline text-primary"></i>
-                        <span class="badge badge-pill badge-danger">1</span>
-                    </div>
-                    <h5 class="mt-2 mb-0">Your Job Notification</h5>
-                </div>
-                <div class="col-lg-8 col-md-7 mt-4 mt-sm-0">
-                    <form>
-                        <div class="form-group mb-0">
-                            <div class="input-group mb-0">
-                                <input name="email" id="email" type="email" class="form-control"
-                                    placeholder="Your email :" required="" aria-describedby="newssubscribebtn">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary submitBnt" type="submit"
-                                        id="newssubscribebtn">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- subscribe end -->
 
     <!--Footer start-->
     <footer class="footer">
