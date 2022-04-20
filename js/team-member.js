@@ -11,7 +11,7 @@ const team = [
   {
     "name": "Gloria Negrete",
     "work": "Project Manager",
-    "about": "Hagas lo que hagas, hazlo con intensamente -Robert Henry",
+    "about": "Hagas lo que hagas, hazlo intensamente -Robert Henry",
     "photo": "./images/Team/GloriaN.png",
     "github": "",
     "linkedin": "",
