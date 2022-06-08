@@ -65,3 +65,33 @@
   -ms-transform: translate3d(0,0,0);
 }
 
+.carrusel{
+	width: 100%;
+	overflow-x: hidden;
+}
+.grande{
+	width: 200%;
+	display: flex;
+	flex-flow: flex-start;
+	align-items: center;
+	justify-content: space-between;
+
+	transition: all .5s ease;
+	transform:  translateX(0%);
+}
+.cajita{
+	width: calc(100% / 2);
+}
+
+.cajita.activo{
+	background-color: black;
+}
+
+.botonesC{
+	width: 100%;
+	margin: 1em 0 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
