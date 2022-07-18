@@ -494,7 +494,8 @@
                                 <div class="col-12">
                                     <div class="custom-control custom-switch m-0">
                                         <div class="form-group">
-                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1"
+                                                disabled>
                                             <label class="custom-control-label phase-label" for="customSwitch1">Fase
                                                 Hot</label>
                                             <i class="mdi mdi-fire" style="color: #E7664C"> </i>
@@ -657,12 +658,10 @@
                                     <div class="form-group app-label">
                                         <label for="validationCustom01" class="text-muted">Replica: </label>
                                         <div class="d-flex justify-content-around">
-                                            <a id='replica-si' href="javascript:void(0)"
-                                                class="btn btn-primary-outline" style="width: 40%;"
-                                                onclick="selectButton('replica','si')"> Si </a>
-                                            <a id='replica-no' href="javascript:void(0)"
-                                                class="btn btn-danger-outline" style="width: 40%;"
-                                                onclick="selectButton('replica','no')"> No </a>
+                                            <a id='replica-si' href="javascript:void(0)" class="btn btn-primary-outline"
+                                                style="width: 40%;" onclick="selectButton('replica','si')"> Si </a>
+                                            <a id='replica-no' href="javascript:void(0)" class="btn btn-danger-outline"
+                                                style="width: 40%;" onclick="selectButton('replica','no')"> No </a>
                                         </div>
                                     </div>
                                 </div>
@@ -750,6 +749,280 @@
                             </div>
 
 
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT FORM END -->
+
+    <!-- CONTACT FORM START -->
+    <section class="section hide-section pt-0 pb-5" id="searchform">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-dark mb-0">Define tu capa de Busqueda</h2>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-12">
+                    <div class="custom-form rounded border p-4 h-100">
+                        <div id="message"></div>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="row" style="width: 100%;">
+                                <div class="col-3">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">Busquedas concurrentes:
+                                        </label>
+                                        <input name="name" id="validationCustom01" type="number"
+                                            class="form-control resume" placeholder="80" required>
+                                        <div class="invalid-feedback pl-2 pt-1">
+                                            Ingresa la cantidad de usuarios concurrentes:
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">Busquedas al Dia:
+                                        </label>
+                                        <input name="name" id="validationCustom01" type="number"
+                                            class="form-control resume" placeholder="80" required>
+                                        <div class="invalid-feedback pl-2 pt-1">
+                                            Ingresa la cantidad de usuarios concurrentes:
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">Escritura:
+                                        </label>
+                                        <div class="registration-form-box">
+                                            <div class="d-flex justify-content-between">
+                                                <table style="width: 85%;">
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td>
+                                                                <input name="answer" id="answer_1" type="radio">
+                                                            </td>
+                                                            <td>
+                                                                <input name="answer" id="answer_2" type="radio">
+                                                            </td>
+                                                            <td>
+                                                                <input name="answer" id="answer_3" type="radio">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <label class=" text-muted"
+                                                                    for="answer_1">Intensiva</label>
+                                                            </td>
+
+                                                            <td s>
+                                                                <label class=" text-muted"
+                                                                    for="answer_2">Moderada</label>
+                                                            </td>
+                                                            <td>
+                                                                <label class=" text-muted" for="answer_3">
+                                                                    Basica</label>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">Tiempos de respuesta:
+                                        </label>
+                                        <div class="registration-form-box">
+                                            <div class="d-flex justify-content-between">
+                                                <table style="width: 85%;">
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td>
+                                                                <input name="answer" id="answer_1" type="radio">
+                                                            </td>
+                                                            <td>
+                                                                <input name="answer" id="answer_2" type="radio">
+                                                            </td>
+                                                            <td>
+                                                                <input name="answer" id="answer_3" type="radio">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <label class=" text-muted"
+                                                                    for="answer_1">Rapidos</label>
+                                                            </td>
+
+                                                            <td s>
+                                                                <label class=" text-muted"
+                                                                    for="answer_2">Moderados</label>
+                                                            </td>
+                                                            <td>
+                                                                <label class=" text-muted" for="answer_3">
+                                                                    Basicos</label>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT FORM END -->
+
+    <!-- CONTACT FORM START -->
+    <section class="section pt-0 pb-5" id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-dark mb-0">Define tu capa de Visualizacion y Analisis</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="custom-form rounded border p-4 h-100">
+                        <div id="message"></div>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="row ml-1">
+                                <div class="col-4">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">Usuarios concurrentes:
+                                        </label>
+                                        <input name="name" id="validationCustom01" type="number"
+                                            class="form-control resume" placeholder="Cantidad de usuarios concurrentes"
+                                            required>
+                                        <div class="invalid-feedback pl-2 pt-1">
+                                            Ingresa la cantidad de usuarios concurrentes:
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">Cantidad de tableros:
+                                        </label>
+                                        <input name="name" id="validationCustom01" type="number"
+                                            class="form-control resume" placeholder="Cantidad de tableros" required>
+                                        <div class="invalid-feedback pl-2 pt-1">
+                                            Ingresa la cantidad de tableros:
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">¿Requieren reportes?:
+                                        </label>
+                                        <div>
+                                            <div class="custom-control custom-radio custom-control-inline ml-0">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioReports1" name="radioReports"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioReports1">Si</label>
+                                                </div>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioReports2" name="radioReports"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioReports2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">¿Requieren HA?: </label>
+                                        <div>
+                                            <div class="custom-control custom-radio custom-control-inline ml-0">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioHA1" name="radioHA"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioHA1">Si</label>
+                                                </div>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioHA2" name="radioHA"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioHA2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">¿Usara Dashboards embebidos?:
+                                        </label>
+                                        <div>
+                                            <div class="custom-control custom-radio custom-control-inline ml-0">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioEmbebed1" name="radioEmbebed"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioEmbebed1">Si</label>
+                                                </div>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioEmbebed2" name="radioEmbebed"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioEmbebed2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group app-label">
+                                        <label for="validationCustom01" class="text-muted">¿Requieren Multi Tenant?:
+                                        </label>
+                                        <div>
+                                            <div class="custom-control custom-radio custom-control-inline ml-0">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioTenant1" name="radioTenant"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioTenant1">Si</label>
+                                                </div>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <div class="form-group">
+                                                    <input type="radio" id="radioTenant2" name="radioTenant"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label text-muted"
+                                                        for="radioTenant2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </form>
                     </div>
@@ -892,15 +1165,15 @@
                                     <div class="tab-pane fade" id="pills-smart" role="tabpanel"
                                         aria-labelledby="pills-smart-tab">
                                         <div class="row px-5">
-                                            <label>Ingresa el cupon que te entrego el equipo comercial de NowBit, con este cupon llegara el sizing a tu correo sin necesidad de reunirte con el equipo comercial.</label>
+                                            <label>Ingresa el cupon que te entrego el equipo comercial de NowBit, con
+                                                este cupon llegara el sizing a tu correo sin necesidad de reunirte con
+                                                el equipo comercial.</label>
                                             <div class="col-lg-12">
                                                 <div class="form-group app-label ">
                                                     <label class="text-muted"></label>
                                                     <input name="email" id="email1" type="email"
-                                                        class="form-control resume p-5"
-                                                        placeholder="Ingresa tu cupon"
-                                                        required
-                                                        style="font-size: 32px;">
+                                                        class="form-control resume p-5" placeholder="Ingresa tu cupon"
+                                                        required style="font-size: 32px;">
                                                     <div class="invalid-feedback pl-2 pt-1">
                                                         Ingresa un Cupon Valido
                                                     </div>
@@ -1021,8 +1294,7 @@
                     element.classList.add("btn-primary-outline");
                     element.classList.remove("btn-primary");
                 }
-            }
-            else if (buttons == 'replica' || buttons == 'replicacold') {
+            } else if (buttons == 'replica' || buttons == 'replicacold') {
                 if (selected == 'si') {
                     element.classList.add("btn-primary");
                     element.classList.remove("btn-primary-outline");
@@ -1052,9 +1324,13 @@
             if (source == 'security' || source == 'observability') {
                 var element = document.getElementById("phases");
                 element.classList.remove("hide-section");
+                var element = document.getElementById("searchform");
+                element.classList.add("hide-section");
             } else if (source == 'search') {
                 var element = document.getElementById("phases");
                 element.classList.add("hide-section");
+                var element = document.getElementById("searchform");
+                element.classList.remove("hide-section");
             }
             boxes.forEach(box => {
                 var selectedBox = document.getElementById(box);
