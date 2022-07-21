@@ -1,11 +1,20 @@
 const team = [
   {
-    "name": "Cesar Prada",
-    "work": "Operador TI",
-    "about": "Aficionado a la tecnología y al aprendizaje continuo",
-    "photo": "./images/Team/CesarP.png",
+    "name": "Tatiana Mejia",
+    "work": "Coordinadora de Mercadeo",
+    "about": "¡Ama, vive y sueña!",
+    "photo": "./images/Team/TatianaM.png",
     "github": "",
-    "linkedin": "https://www.linkedin.com/in/cesar-prada-consultor-trafficker-marketing-seo-sem/",
+    "linkedin": "https://www.linkedin.com/in/tatiana-mejia",
+    "whatsapp": ""
+  },
+  {
+    "name": "Lino Rojas",
+    "work": "Inversionista",
+    "about": "“El dinero es un efecto de borde, cuando te dedicas a lo que te apasiona”",
+    "photo": "./images/Team/LinoR.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/linorojashermida/",
     "whatsapp": ""
   },
   {
@@ -18,12 +27,12 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Duilia Guerrero",
-    "work": "Operador TI",
-    "about": "El trabajo duro es inútil para aquellos que no creen en sí mismos",
-    "photo": "./images/Team/DuiliaG.png",
+    "name": "Camilo Otalora",
+    "work": "Ingeniero Elastic",
+    "about": "Si el conocimiento puede crear problemas, no es con la ignorancia que podemos resolverlos.",
+    "photo": "./images/Team/CamiloO.png",
     "github": "",
-    "linkedin": "https://www.linkedin.com/in/duilia/",
+    "linkedin": "",
     "whatsapp": ""
   },
   {
