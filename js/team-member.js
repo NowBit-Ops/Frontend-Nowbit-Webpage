@@ -1,5 +1,41 @@
 const team = [
   {
+    "name": "Alexander Monroy",
+    "work": "ELK Junior Engineer",
+    "about": "No hay que dejar de aprender",
+    "photo": "./images/Team/AlexanderM.png",
+    "github": "",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  {
+    "name": "Guillermo Penagos",
+    "work": "Arquitecto de preventa",
+    "about": "Disfruta la vida; las experiencias son eternidad!",
+    "photo": "./images/Team/GuillermoP.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/guillermo-penagos/",
+    "whatsapp": ""
+  },
+  {
+    "name": "Julio Gonzalez",
+    "work": "ELK Junior Engineer",
+    "about": "Fanático de la cocina y las motos. Emocionado por los retos que se vienen.",
+    "photo": "./images/Team/JulioG.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/julio-vigoya-00558014a/",
+    "whatsapp": ""
+  },
+  {
+    "name": "Santiago Gutierrez",
+    "work": "Operador TI",
+    "about": "Fanático del fútbol y los videojuegos en línea",
+    "photo": "./images/Team/SantiagoG.png",
+    "github": "",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  {
     "name": "Tatiana Mejia",
     "work": "Coordinadora de Mercadeo",
     "about": "¡Ama, vive y sueña!",
