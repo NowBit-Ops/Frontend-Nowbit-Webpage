@@ -2489,6 +2489,16 @@ a.job-list[data-toggle=collapse].collapsed:before {
   transition: all 0.5s;
 }
 
+.contact-icon-nowbit {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+  border-color: #2f55d4 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .error {
   margin: 8px 0px;
   display: none;
