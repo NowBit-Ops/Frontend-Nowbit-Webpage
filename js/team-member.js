@@ -1,7 +1,7 @@
 const team = [
   {
     "name": "Alexander Monroy",
-    "work": "ELK Junior Engineer",
+    "work": "JR Engineer Consultant",
     "about": "No hay que dejar de aprender",
     "photo": "./images/Team/AlexanderM.png",
     "github": "",
@@ -19,7 +19,7 @@ const team = [
   },
   {
     "name": "Julio Gonzalez",
-    "work": "ELK Junior Engineer",
+    "work": "JR Engineer Consultant",
     "about": "Fanático de la cocina y las motos. Emocionado por los retos que se vienen.",
     "photo": "./images/Team/JulioG.png",
     "github": "",
@@ -28,7 +28,7 @@ const team = [
   },
   {
     "name": "Santiago Gutierrez",
-    "work": "Operador TI",
+    "work": "Operations Analyst",
     "about": "Fanático del fútbol y los videojuegos en línea",
     "photo": "./images/Team/SantiagoG.png",
     "github": "",
@@ -73,7 +73,7 @@ const team = [
   },
   {
     "name": "Hugo Cruz",
-    "work": "Operador TI",
+    "work": "Coordinador de Servicios Manejados",
     "about": "¡La disciplina es el ingrediente más importante del éxito!",
     "photo": "./images/Team/HugoC.png",
     "github": "",
@@ -82,7 +82,7 @@ const team = [
   },
   {
     "name": "Juan Montoya",
-    "work": "Lider Tecnico",
+    "work": "Engineering Manager",
     "about": "Amante de la tecnología y la gastronomía",
     "photo": "./images/Team/JuanM.png",
     "github": "https://github.com/Hallip",
@@ -91,7 +91,7 @@ const team = [
   },
   {
     "name": "Jeyson Guzmán",
-    "work": "Elastic Solutions Architect",
+    "work": "Gerente General",
     "about": "Viajero, motociclista y geek",
     "photo": "./images/Team/JeysonG.png",
     "github": "https://github.com/jeysonguzman",
@@ -109,7 +109,7 @@ const team = [
   },
   {
     "name": "Jhon Forero",
-    "work": "ELK Junior Engineer",
+    "work": "Semi Senior Engineer Consultant",
     "about": "Me apasiona el diseño y la programación",
     "photo": "./images/Team/JhonF.png",
     "github": "https://github.com/AlexForer",
@@ -118,7 +118,7 @@ const team = [
   },
   {
     "name": "Juan Gonzalez",
-    "work": "ELK Junior Engineer",
+    "work": "Semi Senior Engineer Consultant",
     "about": "Videojugador de corazón",
     "photo": "./images/Team/JuanD.png",
     "github": "https://github.com/jugonzalezv/",
@@ -145,7 +145,7 @@ const team = [
   },
   {
     "name": "Alexander Rojas",
-    "work": "Administrador Linux",
+    "work": "Senior Enginner Consultant",
     "about": "Apasionado por lo que se hace!",
     "photo": "./images/Team/AlexR.png",
     "github": "",
@@ -163,7 +163,7 @@ const team = [
   },
   {
     "name": "Helen Vargas",
-    "work": "Líder Financiera y Administrativa",
+    "work": "Contadora",
     "about": "Amo disfrutar mi familia",
     "photo": "./images/Team/HelenV.png",
     "github": "",
@@ -187,7 +187,97 @@ const team = [
     "github": "https://github.com/jaguzmanb1",
     "linkedin": "https://www.linkedin.com/in/jhon-guzm%C3%A1n-baham%C3%B3n-612931154/",
     "whatsapp": ""
-  }
+  },
+  {
+    "name": "Adolfo Gómez",
+    "work": "Líder Administrativo y Financiero",
+    "about": "Crecer en equipo y generar soluciones es lo que me impulsa día a día",
+    "photo": "./images/Team/Adolfo.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/adolfo-gómez-oviedo-097b3396",
+    "whatsapp": ""
+  },
+  {
+    "name": "Bryan Bustos",
+    "work": "Operations Analyst",
+    "about": "La vida es una aventura, atrévete a más cada día",
+    "photo": "./images/Team/Bryan.png",
+    "github": "https://github.com/bryanbustos5",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  {
+    "name": "Isabel Serna",
+    "work": "Analista de Gestión Humana",
+    "about": "La diversidad es el signo más rotundo de la vida",
+    "photo": "./images/Team/Isabel.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/isabel-serna-moreno-b14ba3262/",
+    "whatsapp": ""
+  },
+  // {
+  //   "name": "Manuel Montoya",
+  //   "work": "Operations Analyst",
+  //   "about": "",
+  //   "photo": "",
+  //   "github": "",
+  //   "linkedin": "",
+  //   "whatsapp": ""
+  // },
+    {
+    "name": "Camilo Velez",
+    "work": "Operations Analyst",
+    "about": "No te rindas sin luchar",
+    "photo": "./images/Team/CamiloV.png",
+    "github": "",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  {
+    "name": "Manuel Quintana",
+    "work": "JR Engineer Consultant",
+    "about": "",
+    "photo": "./images/Team/ManuelQ.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/manuel-e-quintana-",
+    "whatsapp": ""
+  },
+  {
+    "name": "Mónica de los Cobos",
+    "work": "Consultor comercial Senior",
+    "about": "La perseverancia es el puente que conecta tus sueños con la realidad, y disfrutar lo que haces es el combustible que impulsa a continuar con pasión",
+    "photo": "./images/Team/Monica.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/monica-de-los-cobos",
+    "whatsapp": ""
+  },
+  {
+    "name": "Roberto Bedoya",
+    "work": "Ingeniero de Automatización",
+    "about": "El éxito es simplemente la forma de medir nuestras propias victorias, solo vive y eso te hará exitoso.",
+    "photo": "./images/Team/Roberto.png",
+    "github": "",
+    "linkedin": "http://linkedin.com/in/robertobedoyag",
+    "whatsapp": ""
+  },
+  {
+    "name": "Santiago Poveda",
+    "work": "JR Engineer Consultant",
+    "about": "No es solo vivir es sentirse vivo",
+    "photo": "./images/Team/SantiagoP.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/santiago-poveda-garcia-88656b184",
+    "whatsapp": ""
+  },
+  {
+    "name": "Sofia Barrera",
+    "work": "JR Engineer Consultant",
+    "about": "Si puedes soñarlo, puedes hacerlo",
+    "photo": "./images/Team/SofiaB.png",
+    "github": "https://github.com/sofiabarrera",
+    "linkedin": "https://www.linkedin.com/in/sofia-barrera-b853b11a2/",
+    "whatsapp": ""
+  },
 ]
 
 function getRandom(arr, n) {
