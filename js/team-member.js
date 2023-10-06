@@ -64,7 +64,7 @@ const team = [
   },
   {
     "name": "Camilo Otalora",
-    "work": "Ingeniero Elastic",
+    "work": "Semi Senior Engineer Consultant",
     "about": "Si el conocimiento puede crear problemas, no es con la ignorancia que podemos resolverlos.",
     "photo": "./images/Team/CamiloO.png",
     "github": "",
@@ -100,7 +100,7 @@ const team = [
   },
   {
     "name": "Francisco Gómez",
-    "work": "Ingeniero Elastic",
+    "work": "Senior Engineer Consultant",
     "about": "Apasionado con la historia y la música",
     "photo": "./images/Team/FranciscoG.png",
     "github": "https://github.com/Fran1089",
@@ -109,7 +109,7 @@ const team = [
   },
   {
     "name": "Jhon Forero",
-    "work": "Semi Senior Engineer Consultant",
+    "work": "Senior Engineer Consultant",
     "about": "Me apasiona el diseño y la programación",
     "photo": "./images/Team/JhonF.png",
     "github": "https://github.com/AlexForer",
@@ -118,7 +118,7 @@ const team = [
   },
   {
     "name": "Juan Gonzalez",
-    "work": "Semi Senior Engineer Consultant",
+    "work": "Senior Engineer Consultant",
     "about": "Videojugador de corazón",
     "photo": "./images/Team/JuanD.png",
     "github": "https://github.com/jugonzalezv/",
@@ -145,7 +145,7 @@ const team = [
   },
   {
     "name": "Alexander Rojas",
-    "work": "Senior Enginner Consultant",
+    "work": "Ingeniero consultor",
     "about": "Apasionado por lo que se hace!",
     "photo": "./images/Team/AlexR.png",
     "github": "",
@@ -181,7 +181,7 @@ const team = [
   },
   {
     "name": "Jhon Guzmán",
-    "work": "Lider Tecnico",
+    "work": "Socio, Fundador",
     "about": "ELK expert y golang developer",
     "photo": "./images/Team/JhonG.png",
     "github": "https://github.com/jaguzmanb1",
@@ -215,15 +215,15 @@ const team = [
     "linkedin": "https://www.linkedin.com/in/isabel-serna-moreno-b14ba3262/",
     "whatsapp": ""
   },
-  // {
-  //   "name": "Manuel Montoya",
-  //   "work": "Operations Analyst",
-  //   "about": "",
-  //   "photo": "",
-  //   "github": "",
-  //   "linkedin": "",
-  //   "whatsapp": ""
-  // },
+  {
+    "name": "Manuel Montoya",
+    "work": "Operations Analyst",
+    "about": "Apasionado de la música y videojuegos",
+    "photo": "./images/Team/ManuelM.png",
+    "github": "",
+    "linkedin": "",
+    "whatsapp": ""
+  },
     {
     "name": "Camilo Velez",
     "work": "Operations Analyst",
