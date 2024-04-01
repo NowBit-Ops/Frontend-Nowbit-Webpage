@@ -16,9 +16,10 @@ File: main stylesheet
 10.candidates
 11.employers
 12.blog
-13.pages
-14.contact
-15.post-a-job
+13.boletines
+14.pages
+15.contact
+16.post-a-job
 **********************/
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
 .bg-primary {
@@ -2321,6 +2322,14 @@ a.job-list[data-toggle=collapse].collapsed:before {
   left: 22px;
   top: 6px;
 }
+
+/********************
+      BOLETINES
+*********************/
+.boletines {
+  line-height: 0;
+}
+
 
 /********************
       ABOUT US
