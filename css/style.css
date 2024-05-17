@@ -21,6 +21,9 @@ File: main stylesheet
 15.contact
 16.post-a-job
 **********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
 .bg-primary {
   background-color: #2f55d4 !important;
@@ -2328,6 +2331,18 @@ a.job-list[data-toggle=collapse].collapsed:before {
 *********************/
 .boletines {
   line-height: 0;
+}
+
+.roboto-titulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 
