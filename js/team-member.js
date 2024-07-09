@@ -18,15 +18,6 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Julio Gonzalez",
-    "work": "JR Engineer Consultant",
-    "about": "Fanático de la cocina y las motos. Emocionado por los retos que se vienen.",
-    "photo": "./images/Team/JulioG.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/julio-vigoya-00558014a/",
-    "whatsapp": ""
-  },
-  {
     "name": "Santiago Gutierrez",
     "work": "Operations Analyst",
     "about": "Fanático del fútbol y los videojuegos en línea",
@@ -81,15 +72,6 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Juan Montoya",
-    "work": "Engineering Manager",
-    "about": "Amante de la tecnología y la gastronomía",
-    "photo": "./images/Team/JuanM.png",
-    "github": "https://github.com/Hallip",
-    "linkedin": "https://www.linkedin.com/in/juan-montoya-8a9bb414b/",
-    "whatsapp": ""
-  },
-  {
     "name": "Jeyson Guzmán",
     "work": "Gerente General",
     "about": "Viajero, motociclista y geek",
@@ -117,15 +99,6 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Juan Gonzalez",
-    "work": "Senior Engineer Consultant",
-    "about": "Videojugador de corazón",
-    "photo": "./images/Team/JuanD.png",
-    "github": "https://github.com/jugonzalezv/",
-    "linkedin": "https://www.linkedin.com/in/jugonzalezv",
-    "whatsapp": ""
-  },
-  {
     "name": "Oscar Villa",
     "work": "Gerente Comercial",
     "about": "Nada mejor que dedicarte a hacer lo que te gusta y que además te paguen por hacerlo",
@@ -150,15 +123,6 @@ const team = [
     "photo": "./images/Team/AlexR.png",
     "github": "",
     "linkedin": "",
-    "whatsapp": ""
-  },
-  {
-    "name": "Nicolas Villa",
-    "work": "Analista de mercadeo",
-    "about": "No sabes que tan fuerte eres hasta que ser fuerte es la unica opción que tienes",
-    "photo": "./images/Team/NicolasV.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/nicol%C3%A1s-villa-hernandez-a68a6366/",
     "whatsapp": ""
   },
   {
@@ -198,30 +162,12 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Bryan Bustos",
-    "work": "Operations Analyst",
-    "about": "La vida es una aventura, atrévete a más cada día",
-    "photo": "./images/Team/Bryan.png",
-    "github": "https://github.com/bryanbustos5",
-    "linkedin": "",
-    "whatsapp": ""
-  },
-  {
     "name": "Isabel Serna",
     "work": "Analista de Gestión Humana",
     "about": "La diversidad es el signo más rotundo de la vida",
     "photo": "./images/Team/Isabel.png",
     "github": "",
     "linkedin": "https://www.linkedin.com/in/isabel-serna-moreno-b14ba3262/",
-    "whatsapp": ""
-  },
-  {
-    "name": "Manuel Montoya",
-    "work": "Operations Analyst",
-    "about": "Apasionado de la música y videojuegos",
-    "photo": "./images/Team/ManuelM.png",
-    "github": "",
-    "linkedin": "",
     "whatsapp": ""
   },
     {
@@ -231,24 +177,6 @@ const team = [
     "photo": "./images/Team/CamiloV.png",
     "github": "",
     "linkedin": "",
-    "whatsapp": ""
-  },
-  {
-    "name": "Manuel Quintana",
-    "work": "JR Engineer Consultant",
-    "about": "",
-    "photo": "./images/Team/ManuelQ.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/manuel-e-quintana-",
-    "whatsapp": ""
-  },
-  {
-    "name": "Mónica de los Cobos",
-    "work": "Consultor comercial Senior",
-    "about": "La perseverancia es el puente que conecta tus sueños con la realidad, y disfrutar lo que haces es el combustible que impulsa a continuar con pasión",
-    "photo": "./images/Team/Monica.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/monica-de-los-cobos",
     "whatsapp": ""
   },
   {
@@ -278,6 +206,33 @@ const team = [
     "linkedin": "https://www.linkedin.com/in/sofia-barrera-b853b11a2/",
     "whatsapp": ""
   },
+  {
+    "name": "Mauricio Rozo",
+    "work": "Senior Account Manager",
+    "about": "Creo en Dios, porque nunca me abandonó en mis desiertos y en mis paraisos",
+    "photo": "./images/Team/MauricioR.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/amrozoh/",
+    "whatsapp": ""
+  },
+  {
+    "name": "Otilia Zamittiz",
+    "work": "Account Manager MX",
+    "about": "Lo perfecto es enemigo de lo bueno",
+    "photo": "./images/Team/OtiliaZ.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/otilia-z-3929048/",
+    "whatsapp": ""
+  },
+  {
+    "name": "Alexander Dávila",
+    "work": "Consultor Senior",
+    "about": "Transformando datos en historias de éxito",
+    "photo": "./images/Team/AlexanderD.png",
+    "github": "https://github.com/Alex1795",
+    "linkedin": "",
+    "whatsapp": ""
+  }
 ]
 
 function getRandom(arr, n) {
