@@ -1,7 +1,7 @@
 const team = [
   {
     "name": "Alexander Monroy",
-    "work": "JR Engineer Consultant",
+    "work": "Semi Senior Consultant",
     "about": "No hay que dejar de aprender",
     "photo": "./images/Team/AlexanderM.png",
     "github": "",
@@ -10,7 +10,7 @@ const team = [
   },
   {
     "name": "Guillermo Penagos",
-    "work": "Arquitecto de preventa",
+    "work": "Arquitecto de soluciones",
     "about": "Disfruta la vida; las experiencias son eternidad!",
     "photo": "./images/Team/GuillermoP.png",
     "github": "",
@@ -19,7 +19,7 @@ const team = [
   },
   {
     "name": "Santiago Gutierrez",
-    "work": "Operations Analyst",
+    "work": "JR Consultant",
     "about": "Fanático del fútbol y los videojuegos en línea",
     "photo": "./images/Team/SantiagoG.png",
     "github": "",
@@ -54,17 +54,8 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Camilo Otalora",
-    "work": "Semi Senior Engineer Consultant",
-    "about": "Si el conocimiento puede crear problemas, no es con la ignorancia que podemos resolverlos.",
-    "photo": "./images/Team/CamiloO.png",
-    "github": "",
-    "linkedin": "",
-    "whatsapp": ""
-  },
-  {
     "name": "Hugo Cruz",
-    "work": "Coordinador de Servicios Manejados",
+    "work": "Coordinador de Servicios Administrados",
     "about": "¡La disciplina es el ingrediente más importante del éxito!",
     "photo": "./images/Team/HugoC.png",
     "github": "",
@@ -82,7 +73,7 @@ const team = [
   },
   {
     "name": "Francisco Gómez",
-    "work": "Senior Engineer Consultant",
+    "work": "Líder se Servicios Administrados",
     "about": "Apasionado con la historia y la música",
     "photo": "./images/Team/FranciscoG.png",
     "github": "https://github.com/Fran1089",
@@ -91,7 +82,7 @@ const team = [
   },
   {
     "name": "Jhon Forero",
-    "work": "Senior Engineer Consultant",
+    "work": "Senior Consultant",
     "about": "Me apasiona el diseño y la programación",
     "photo": "./images/Team/JhonF.png",
     "github": "https://github.com/AlexForer",
@@ -109,7 +100,7 @@ const team = [
   },
   {
     "name": "Andrés Castiblanco",
-    "work": "Gerente de Operaciones",
+    "work": "Gerente de Ingeniería",
     "about": "Me apasiona la tecnología, amo la lectura y disfruto las películas",
     "photo": "./images/Team/AndresC.png",
     "github": "",
@@ -118,7 +109,7 @@ const team = [
   },
   {
     "name": "Alexander Rojas",
-    "work": "Ingeniero consultor",
+    "work": "Semi Senior Consultant",
     "about": "Apasionado por lo que se hace!",
     "photo": "./images/Team/AlexR.png",
     "github": "",
@@ -132,15 +123,6 @@ const team = [
     "photo": "./images/Team/HelenV.png",
     "github": "",
     "linkedin": "https://www.linkedin.com/in/helen-vargas-944b6a191",
-    "whatsapp": ""
-  },
-  {
-    "name": "Liliana Velandia",
-    "work": "Auxiliar Administrativa y de gestión humana",
-    "about": "Apasionada de la música y los rompecabezas",
-    "photo": "./images/Team/LilianaV.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/lilianavelandia87",
     "whatsapp": ""
   },
   {
@@ -172,7 +154,7 @@ const team = [
   },
     {
     "name": "Camilo Velez",
-    "work": "Operations Analyst",
+    "work": "JR Consultant",
     "about": "No te rindas sin luchar",
     "photo": "./images/Team/CamiloV.png",
     "github": "",
@@ -181,7 +163,7 @@ const team = [
   },
   {
     "name": "Roberto Bedoya",
-    "work": "Ingeniero de Automatización",
+    "work": "Semi Senior Consultant",
     "about": "El éxito es simplemente la forma de medir nuestras propias victorias, solo vive y eso te hará exitoso.",
     "photo": "./images/Team/Roberto.png",
     "github": "",
@@ -190,7 +172,7 @@ const team = [
   },
   {
     "name": "Santiago Poveda",
-    "work": "JR Engineer Consultant",
+    "work": "JR Consultant",
     "about": "No es solo vivir es sentirse vivo",
     "photo": "./images/Team/SantiagoP.png",
     "github": "",
@@ -199,7 +181,7 @@ const team = [
   },
   {
     "name": "Sofia Barrera",
-    "work": "JR Engineer Consultant",
+    "work": "JR Consultant",
     "about": "Si puedes soñarlo, puedes hacerlo",
     "photo": "./images/Team/SofiaB.png",
     "github": "https://github.com/sofiabarrera",
@@ -208,7 +190,7 @@ const team = [
   },
   {
     "name": "Mauricio Rozo",
-    "work": "Senior Account Manager",
+    "work": "Account Manager NOLA",
     "about": "Creo en Dios, porque nunca me abandonó en mis desiertos y en mis paraisos",
     "photo": "./images/Team/MauricioR.png",
     "github": "",
@@ -225,12 +207,57 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Alexander Dávila",
-    "work": "Consultor Senior",
-    "about": "Transformando datos en historias de éxito",
-    "photo": "./images/Team/AlexanderD.png",
-    "github": "https://github.com/Alex1795",
+    "name": "Adriana Marin",
+    "work": "Analista de Administración y Finanzas",
+    "about": "Ningún mar en calma hizo experto a un marinero",
+    "photo": "./images/Team/AdrianaM.png",
+    "github": "",
     "linkedin": "",
+    "whatsapp": ""
+  },
+  {
+    "name": "Cynthia Madrigal",
+    "work": "Arquitecta de Soluciones",
+    "about": "Sin sacrificio no hay victoria",
+    "photo": "./images/Team/CynthiaM.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/cynthia-madrigal-03b555129/",
+    "whatsapp": ""
+  },
+  {
+    "name": "Daniela Paz",
+    "work": "Líder de Gestión Humana",
+    "about": "Como los granos de café, cada experiencia en la vida tiene su razón de ser; todo aporta su sabor único al resultado final",
+    "photo": "./images/Team/DanielaP.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/daniela-paz-vargas-ba65681a3/",
+    "whatsapp": ""
+  },
+  {
+    "name": "Felipe Matamoros",
+    "work": "Senior Consultant",
+    "about": "La curiosidad es la fuerza de la vida en todos nosotroso",
+    "photo": "./images/Team/FelipeM.png",
+    "github": "",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  {
+    "name": "Giovanny Bustamante",
+    "work": "Semi Senior Consultant",
+    "about": "Be all you can be",
+    "photo": "./images/Team/GiovanniB.png",
+    "github": "https://github.com/GioKungFu",
+    "linkedin": "",
+    "whatsapp": ""
+  },
+  {
+    "name": "Felipe Toro",
+    "work": "Jr Consultant",
+    "about": "Un viaje de mil millas comienza con un solo pas",
+    "photo": "./images/Team/FelipeT.png",
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/luis-felipe-toro-valencia-8abb54265/",
     "whatsapp": ""
   }
 ]
