@@ -143,15 +143,6 @@ const team = [
     "linkedin": "https://www.linkedin.com/in/adolfo-gómez-oviedo-097b3396",
     "whatsapp": ""
   },
-  {
-    "name": "Isabel Serna",
-    "work": "Analista de Gestión Humana",
-    "about": "La diversidad es el signo más rotundo de la vida",
-    "photo": "./images/Team/Isabel.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/isabel-serna-moreno-b14ba3262/",
-    "whatsapp": ""
-  },
     {
     "name": "Camilo Velez",
     "work": "JR Consultant",
