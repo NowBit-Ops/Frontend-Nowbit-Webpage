@@ -143,15 +143,6 @@ const team = [
     "linkedin": "https://www.linkedin.com/in/adolfo-gómez-oviedo-097b3396",
     "whatsapp": ""
   },
-    {
-    "name": "Camilo Velez",
-    "work": "JR Consultant",
-    "about": "No te rindas sin luchar",
-    "photo": "./images/Team/CamiloV.png",
-    "github": "",
-    "linkedin": "",
-    "whatsapp": ""
-  },
   {
     "name": "Roberto Bedoya",
     "work": "Semi Senior Consultant",
@@ -204,15 +195,6 @@ const team = [
     "photo": "./images/Team/AdrianaM.png",
     "github": "",
     "linkedin": "",
-    "whatsapp": ""
-  },
-  {
-    "name": "Cynthia Madrigal",
-    "work": "Arquitecta de Soluciones",
-    "about": "Sin sacrificio no hay victoria",
-    "photo": "./images/Team/CynthiaM.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/cynthia-madrigal-03b555129/",
     "whatsapp": ""
   },
   {
