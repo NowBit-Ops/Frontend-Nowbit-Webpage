@@ -144,24 +144,6 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Isabel Serna",
-    "work": "Analista de Gestión Humana",
-    "about": "La diversidad es el signo más rotundo de la vida",
-    "photo": "./images/Team/Isabel.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/isabel-serna-moreno-b14ba3262/",
-    "whatsapp": ""
-  },
-    {
-    "name": "Camilo Velez",
-    "work": "JR Consultant",
-    "about": "No te rindas sin luchar",
-    "photo": "./images/Team/CamiloV.png",
-    "github": "",
-    "linkedin": "",
-    "whatsapp": ""
-  },
-  {
     "name": "Roberto Bedoya",
     "work": "Semi Senior Consultant",
     "about": "El éxito es simplemente la forma de medir nuestras propias victorias, solo vive y eso te hará exitoso.",
@@ -213,15 +195,6 @@ const team = [
     "photo": "./images/Team/AdrianaM.png",
     "github": "",
     "linkedin": "",
-    "whatsapp": ""
-  },
-  {
-    "name": "Cynthia Madrigal",
-    "work": "Arquitecta de Soluciones",
-    "about": "Sin sacrificio no hay victoria",
-    "photo": "./images/Team/CynthiaM.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/cynthia-madrigal-03b555129/",
     "whatsapp": ""
   },
   {
