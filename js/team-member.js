@@ -73,7 +73,7 @@ const team = [
   },
   {
     "name": "Francisco Gómez",
-    "work": "Líder se Servicios Administrados",
+    "work": "Líder de Servicios Administrados",
     "about": "Apasionado con la historia y la música",
     "photo": "./images/Team/FranciscoG.png",
     "github": "https://github.com/Fran1089",
@@ -91,7 +91,7 @@ const team = [
   },
   {
     "name": "Oscar Villa",
-    "work": "Gerente Comercial",
+    "work": "Socio",
     "about": "Nada mejor que dedicarte a hacer lo que te gusta y que además te paguen por hacerlo",
     "photo": "./images/Team/OscarV.png",
     "github": "",
@@ -108,15 +108,6 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Alexander Rojas",
-    "work": "Semi Senior Consultant",
-    "about": "Apasionado por lo que se hace!",
-    "photo": "./images/Team/AlexR.png",
-    "github": "",
-    "linkedin": "",
-    "whatsapp": ""
-  },
-  {
     "name": "Helen Vargas",
     "work": "Contadora",
     "about": "Amo disfrutar mi familia",
@@ -127,7 +118,7 @@ const team = [
   },
   {
     "name": "Jhon Guzmán",
-    "work": "Socio, Fundador",
+    "work": "Socio",
     "about": "ELK expert y golang developer",
     "photo": "./images/Team/JhonG.png",
     "github": "https://github.com/jaguzmanb1",
@@ -198,29 +189,11 @@ const team = [
     "whatsapp": ""
   },
   {
-    "name": "Daniela Paz",
-    "work": "Líder de Gestión Humana",
-    "about": "Como los granos de café, cada experiencia en la vida tiene su razón de ser; todo aporta su sabor único al resultado final",
-    "photo": "./images/Team/DanielaP.png",
-    "github": "",
-    "linkedin": "https://www.linkedin.com/in/daniela-paz-vargas-ba65681a3/",
-    "whatsapp": ""
-  },
-  {
     "name": "Felipe Matamoros",
     "work": "Senior Consultant",
     "about": "La curiosidad es la fuerza de la vida en todos nosotroso",
     "photo": "./images/Team/FelipeM.png",
     "github": "",
-    "linkedin": "",
-    "whatsapp": ""
-  },
-  {
-    "name": "Giovanny Bustamante",
-    "work": "Semi Senior Consultant",
-    "about": "Be all you can be",
-    "photo": "./images/Team/GiovanniB.png",
-    "github": "https://github.com/GioKungFu",
     "linkedin": "",
     "whatsapp": ""
   },
