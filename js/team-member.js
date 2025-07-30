@@ -118,7 +118,7 @@ const team = [
   },
   {
     "name": "Jhon Guzmán",
-    "work": "Socio",
+    "work": "Socio, fundador",
     "about": "ELK expert y golang developer",
     "photo": "./images/Team/JhonG.png",
     "github": "https://github.com/jaguzmanb1",
