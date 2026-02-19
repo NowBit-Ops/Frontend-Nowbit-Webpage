@@ -1,0 +1,171 @@
+<div class="blog-content">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 job-detail-desc justify-text">
+      <p class="m-5">
+        Elasticsearch ha creado un nuevo servicio llamado "Workplace search" el cuál es una herramienta fantástica para las empresas que necesitan realizar búsquedas rápidas en su base de conocimiento ¡Esta base de conocimiento podría ser archivos PDF, bases de datos, APIs o cualquier fuente que desees!
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-12" style="text-align: center;">
+      <img 
+        src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_Security_el_mejor_aliado_de_la_seguridad/08b617_fc545be2f9744a7f9a44bf5236fd5268_mv2.webp"
+        alt="Workplace Search"
+        class="mx-auto rounded-lg"
+        style="max-width: 100%; height: auto;"
+      />
+    </div>
+  </div>
+
+  <div style="text-align: center; margin: 1rem 0;">
+    <p class="text-muted">Ejemplo de como luce "Workplace search"</p>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_Security_el_mejor_aliado_de_la_seguridad/08b617_b1b4d6ce6e934448ba742ebdc48d137e_mv2.webp"
+      alt="Workplace Search Example"
+      class="mx-auto rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+
+  <div class="job-detail-desc justify-text">
+    <p class="mx-5">
+      En este tutorial, veremos cómo consumir APIs utilizando Logstash, pero puedes cambiar la fuente de datos por la de tu preferencia.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="mx-5">
+      Antes de comenzar necesitas algunas cosas:
+    </p>
+  </div>
+  
+  <div class="job-detail-desc">
+    <ol class="mx-5">
+      <li>
+        Un binario Logstash (<a href="https://www.elastic.co/es/downloads/logstash" target="_blank" rel="noopener noreferrer">https://www.elastic.co/es/downloads/logstash</a>).
+      </li>
+      <li>
+        Para utilizar el clúster de Elasticsearch con Workplace Search puedes descargar el Elasticsearch de prueba para probar esta función (debes activar el módulo Workplace Search).
+      </li>
+      <li>
+        Una cuenta de desarrollador de New York Times (<a href="https://developer.nytimes.com/" target="_blank" rel="noopener noreferrer">https://developer.nytimes.com/</a>) o cualquier API que desees usar.
+      </li>
+      <li>
+        Un editor de código fuente como Atom o VScode (Opcional)
+      </li>
+      <li>
+        Postman (opcional)
+      </li>
+    </ol>
+  </div>
+
+  <div class="job-detail-desc">
+    <h1 class="mx-5">¡Hagámoslo!</h1>
+  </div>
+  
+  <div class="job-detail-desc">
+    <h3 class="mx-5">Crear una fuente API personalizada</h3>
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="mx-5">
+      Lo primero que debemos hacer es crear una fuente personalizada en la consola de Workplace search; para ello, abre el menú izquierdo y haz clic en "fuentes" (sources en inglés):
+    </p>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_Security_el_mejor_aliado_de_la_seguridad/08b617_a33b0dd2ca3345b1a8e3f92d2e252125_mv2.webp"
+      alt="Workplace Search Sources"
+      class="mx-auto rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      Ahora haga clic en el botón verde que dice <strong>Agregar</strong> una <i><strong>fuente de contenido compartido</strong></i>, cuando haya hecho esto, seleccione la fuente API personalizada y escriba el nombre de su fuente API, en este caso, el nombre será New York Times:
+    </p>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_Security_el_mejor_aliado_de_la_seguridad/08b617_da91ae0408e54192b01cd51bc8c4db1e_mv2.webp"
+      alt="Custom API Source"
+      class="mx-auto rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      Ahora que hemos creado nuestra fuente API personalizada, en la fuente API podemos ver el token de acceso, que es único para todas las API de búsqueda en el lugar de trabajo y una clave que es un valor único para cada fuente API que cree.
+    </p>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_Security_el_mejor_aliado_de_la_seguridad/08b617_b30cf257f0334e9081835263b3544631_mv2.webp"
+      alt="API Access Token"
+      class="mx-auto rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+  
+  <div class="job-detail-desc">
+    <h3 class="mx-5">Comprender los resultados de las APIs</h3>
+  </div>
+
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      Antes de indexar los datos en <i>Workplace Search</i>, es importante revisar los resultados que devuelve el API; para ello, podemos utilizar <i>Postman</i> haciendo una <i>solicitud GET</i> a el API, por supuesto, puedes realizar la solicitud utilizando su navegador web, una operación de <i>cURL</i> o cualquier cosa que desees utilizar, la parte importante tiene un resultado formateado para analizar la respuesta ¡esto será importante en la búsqueda!
+    </p>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_Security_el_mejor_aliado_de_la_seguridad/08b617_dc8d637141f34475bd59b75189d29a99_mv2.webp"
+      alt="API Response Example"
+      class="mx-auto rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      Cuando ya hayas identificado los componentes principales de tu respuesta y los campos importantes para <i>Workplace Search</i> (la <i>URL</i>, el cuerpo y el Título), podemos proceder a indexar estos documentos a Elasticsearch para usarlos en Workplace. Recuerda que <i>Workplace Search</i> tiene campos predeterminados que son importantes para la búsqueda, pero puedes agregar cualquier campo adicional si lo deseas.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc">
+    <h3 class="mx-5">Procesamiento e indexación con Logstash</h3>
+  </div>
+
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      La primera parte de un pipeline de Logstash es la entrada, en este caso, para la entrada vamos a usar el complemento http_poller y hacer una solicitud que devuelva las revisiones de Kill Bill en el API del New York Times, esta parte podría cambiarse por cualquier fuente de datos que quiera usar.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      Ahora tenemos que hacer los filtros, para esta parte es importante tener una comprensión clara de la estructura de la respuesta a la solicitud, debemos cambiar el nombre de algunos campos (unificando el esquema entre el <i>API</i> y <i>Workplace search</i>), y si lo necesitas puedes realizar cambios en el contenido utilizando los filtros Logstash.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="mt-3 mx-5">
+      Por último, indexaremos todos estos datos en <i>Workplace Search</i>, luego debemos hacer una peticion de <i>cURL</i> en la <i>API</i> de <i>Workplace Search</i>: para esta parte es importante tener la Clave de nuestra API de <i>Workplace Search</i> y el token de autenticación correspondiente (es lo mismo que creamos en la primera sección) así, como el punto final de <i>Workplace Search</i>, siendo el mismo que utiliza para unirse a la consola de administración de <i>Workplace Search</i>.
+    </p>
+  </div>
+  
+  <div class="p-4">
+    <blockquote class="blockquote p-3 bg-muted rounded-lg">
+      <p class="text-muted mb-0 font-italic">
+        Para complementos no incluidos por defecto, puedes instalarlos ejecutando <strong>bin/logstash-plugin install logstash-output-exec</strong>. Consulta: Trabajar con complementos para obtener más detalles.
+      </p>
+    </blockquote>
+  </div>
+</div>
+

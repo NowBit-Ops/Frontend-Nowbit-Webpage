@@ -1,793 +1,142 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NowBit - Inicio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NowBit - Elastic Elite Partner | Observabilidad, Ciberseguridad y Search AI</title>
+  <meta name="description"
+    content="NowBit es Elite Partner de Elastic en LATAM. Soluciones de observabilidad, ciberseguridad SIEM, Search AI y machine learning con Elasticsearch, Kibana, Logstash. SOC as a Service, NOC as a Service, EDR, APM, monitoring y RAG.">
+  <meta name="keywords"
+    content="Elastic, Elasticsearch, Elastic Stack, ELK, Kibana, Logstash, Elastic Agent, Beats, Observability, Observabilidad, Ciberseguridad, Cybersecurity, SIEM, APM, Logging, Monitoring, Search AI, Vector Database, Artificial Intelligence, Inteligencia Artificial, Machine Learning, VectorDB, SOC, NOC, Security Operations Center, Network Operations Center, Observability as a service, Cybersecurity as a service, Endpoint Protection as a Service, EDR as a service, SIEM as a service, Monitoring as a service, RAG, Retrieval Augmented Generation">
+  <meta name="author" content="NowBit" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZZPL8FDN5"></script>
-    <script>
+  <!-- Geographic targeting -->
+  <meta name="geo.region" content="LATAM" />
+  <meta name="geo.placename"
+    content="América Latina, México, Colombia, Argentina, Chile, Perú, Ecuador, Venezuela, Bolivia, Uruguay, Paraguay, Costa Rica, Panamá, Guatemala, Honduras, El Salvador, Nicaragua, República Dominicana, Puerto Rico, España, California, Texas, Florida, New York, Arizona, Nevada, New Mexico, Colorado, Illinois, New Jersey" />
+  <meta name="DC.coverage" content="América Latina, Estados Unidos" />
+
+  <!-- Language and locale -->
+  <meta http-equiv="content-language" content="es" />
+  <link rel="alternate" hreflang="es" href="https://nowbit.co" />
+  <link rel="alternate" hreflang="es-mx" href="https://nowbit.co" />
+  <link rel="alternate" hreflang="es-co" href="https://nowbit.co" />
+  <link rel="alternate" hreflang="es-ar" href="https://nowbit.co" />
+  <link rel="alternate" hreflang="es-cl" href="https://nowbit.co" />
+  <link rel="alternate" hreflang="es-pe" href="https://nowbit.co" />
+  <link rel="alternate" hreflang="es-us" href="https://nowbit.co" />
+
+  <!-- Open Graph -->
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://storage.googleapis.com/gpt-engineer-file-uploads/WxlWUdmq2sb3NUN3Wa0lGQD1spU2/social-images/social-1763337661287-Generated Image November 16, 2025 - 6_50PM.png">
+  <meta property="og:url" content="https://nowbit.co" />
+  <meta property="og:locale" content="es_LA" />
+  <meta property="og:locale:alternate" content="es_MX" />
+  <meta property="og:locale:alternate" content="es_CO" />
+  <meta property="og:locale:alternate" content="es_AR" />
+  <meta property="og:locale:alternate" content="es_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@nowbit_co" />
+
+
+  <meta name="twitter:image"
+    content="https://storage.googleapis.com/gpt-engineer-file-uploads/WxlWUdmq2sb3NUN3Wa0lGQD1spU2/social-images/social-1763337661287-Generated Image November 16, 2025 - 6_50PM.png">
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NowBit",
+      "description": "Partner Elite de Elastic en América Latina especializado en observabilidad, ciberseguridad SIEM, Search AI y machine learning",
+      "url": "https://nowbit.co",
+      "logo": "/lovable-uploads/30541c30-2be9-4663-951c-bebdfdac22fe.png",
+      "sameAs": [
+        "https://twitter.com/nowbit_co",
+        "https://www.linkedin.com/company/nowbit",
+        "https://www.youtube.com/@nowbit8474"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "México"
+        },
+        {
+          "@type": "Country", 
+          "name": "Colombia"
+        },
+        {
+          "@type": "Country",
+          "name": "Argentina"
+        },
+        {
+          "@type": "Country",
+          "name": "Chile"
+        },
+        {
+          "@type": "Country",
+          "name": "Perú"
+        },
+        {
+          "@type": "Country",
+          "name": "Estados Unidos"
+        }
+      ],
+      "serviceType": [
+        "Observabilidad como Servicio",
+        "SOC as a Service", 
+        "NOC as a Service",
+        "Ciberseguridad SIEM",
+        "Search AI",
+        "Machine Learning",
+        "Elasticsearch",
+        "Kibana",
+        "APM Monitoring"
+      ]
+    }
+    </script>
+
+  <!-- Google Fonts: Roboto (Brand Manual Typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/favicon.ico?v=3" />
+  <link rel="canonical" href="https://nowbit.co" />
+  <meta property="og:title" content="NowBit - Elastic Elite Partner | Observabilidad, Ciberseguridad y Search AI">
+  <meta name="twitter:title" content="NowBit - Elastic Elite Partner | Observabilidad, Ciberseguridad y Search AI">
+  <meta property="og:description"
+    content="NowBit es Elite Partner de Elastic en LATAM. Soluciones de observabilidad, ciberseguridad SIEM, Search AI y machine learning con Elasticsearch, Kibana, Logstash. SOC as a Service, NOC as a Service, EDR, APM, monitoring y RAG.">
+  <meta name="twitter:description"
+    content="NowBit es Elite Partner de Elastic en LATAM. Soluciones de observabilidad, ciberseguridad SIEM, Search AI y machine learning con Elasticsearch, Kibana, Logstash. SOC as a Service, NOC as a Service, EDR, APM, monitoring y RAG.">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZZPL8FDN5"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    gtag('config', 'G-GZZPL8FDN5'); 
-    </script>
-    
-    <meta name="description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <meta property="og:description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <link rel="canonical" href="https://www.nowbit.co" />
-    <meta name="title" property="og:title" content="NowBit - Inicio" />
-    <meta name="image" property="og:image" content="images/logo-Blue.png" />
-
-    <meta property="og:url" content="https://www.nowbit.co" />
-    <meta property="og:site_name" content="NowBit - Inicio" />
-    <meta property="og:type" content="website" />
-
-    <meta name="Elasticsearch" content="Search, Observation, Security" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nowbit -Inicio" />
-    <meta name="twitter:description"
-        content="NowBit es partner Advanced de Elastic Stack: Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability" />
-    <meta name="twitter:image" content="images/logo-Blue.png" />
-    <meta name="keywords"
-        content="NowBit, Elasticsearch, Kibana, Logstash, Beats, Elastic SIEM, Elastic Endpoint Security, Obserbability, Búsqueda, Colombia" />
-    <meta name="author" content="NowBit" />
-
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!--Material Icon -->
-    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
-
-    <!-- selectize css -->
-    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
-
-    <!--Slider-->
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.css" />
-    <link rel="stylesheet" href="css/owl.transitions.css" />
-
-    <!-- Custom  Css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+    gtag('config', 'G-GZZPL8FDN5');
+  </script>
+  <script type="module" crossorigin src="/assets/index-CpgqZy2R.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-jB3xL1rH.css">
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Loader -->
+  <div id="root"></div>
 
-    <!-- Navigation Bar-->
-    <header id="topnav" class="defaultscroll scroll-active">
-        <!-- Menu Start -->
-        <div class="container">
-            <!-- Logo container-->
-            <div>
-                <a href="index.html" class="logo">
-                    <img src="images/logo-light.png" alt="" class="logo-light" height="48" />
-                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="48" />
-                </a>
-            </div>
-            <div class="buy-button">
-                <a href="contact.html" class="btn btn-primary"><i class="mdi mdi-phone-classic"></i> Contáctanos</a>
-            </div>
-            <!--end login button-->
-            <!-- End Logo container-->
-            <div class="menu-extras">
-                <div class="menu-item">
-                    <!-- Mobile menu toggle-->
-                    <a class="navbar-toggle">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                    <!-- End mobile menu toggle-->
-                </div>
-            </div>
-
-            <div id="navigation">
-                <!-- Navigation Menu-->
-                <ul class="navigation-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="has-submenu"><a href="javascript:void(0)">Soluciones</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="solutions-search.html">Búsqueda</a></li>
-                            <li><a href="solutions-observability.html">Observabilidad</a></li>
-                            <li><a href="solutions-security.html">Seguridad</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu"><a href="javascript:void(0)">Servicios</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="services-consulting.html">consultoría</a></li>
-                            <li><a href="services-managed.html">Servicios Administrados</a></li>
-                            <li><a href="services-support.html">Soluciones como Servicio</a></li>
-                            <!-- <li><a href="services-training.html">Entrenamiento</a></li> -->
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:void(0)">Nosotros</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="about.html">¿Quienes somos?</a></li>
-                            <li><a href="join-team.html">Únete al Equipo</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:void(0)">Comunidad</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="blog-grid.html">Blogs</a></li>
-                            <li><a href="boletin-nowbit.html">Boletines</a></li>
-                        </ul>
-                    </li>
-                    <li></li>
-                </ul>
-                <!--end navigation menu-->
-            </div>
-            <!--end navigation-->
-        </div>
-        <!--end container-->
-        <!--end end-->
-    </header>
-    <!--end header-->
-    <!-- Navbar End -->
-
-    <!-- Start Home -->
-    <section class="bg-home" style="background: url('./images/banners/Andres-Nowbit2.webp') center center;">
-        <div class="bg-overlay"></div>
-        <div class="home-center">
-            <div class="home-desc-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="title-heading text-center text-white">
-                                <h2 class="title-simple text-uppercase text-light mb-3">ELASTIC ELITE PARTNER</h2>
-                                <h1 class="heading font-weight-bold  mb-4">Expertos en Soluciones de Búsqueda,
-                                    Observabilidad y Seguridad</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end home -->
-
-    <!-- popular category start -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <h2 class="title title-line pb-5 text-dark">Nuestras Soluciones</h2>
-                        <p class="text-muted para-desc mx-auto mb-1">Expertos en soluciones de búsqueda,
-                            observabilidad y seguridad utilizando el Elastic Stack. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <a href="./solutions-search.html">
-                        <div class="popu-category-box bg-light rounded text-center p-4">
-                            <div class="popu-category-icon mb-3">
-                                <img src="./images/Tecnologias/Elastic_Enterprise_Search_Logo.png" height="64"
-                                    alt="Elasticsearch Elastic Enterprise Search logo png"
-                                    class="rounded-circle shadow">
-                            </div>
-                            <div class="popu-category-content">
-                                <h3 class="mb-2 text-dark title">Búsqueda</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <a href="./solutions-observability.html">
-                        <div class="popu-category-box bg-light rounded text-center p-4">
-                            <div class="popu-category-icon mb-3">
-                                <img src="./images/Tecnologias/Elastic_Observability_Logo.png" height="64"
-                                    alt="Elastic Observability Logo png" class="rounded-circle shadow">
-                            </div>
-                            <div class="popu-category-content">
-                                <h3 class="mb-2 text-dark title">Observabilidad</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <a href="./solutions-security.html">
-                        <div class="popu-category-box bg-light rounded text-center p-4">
-                            <div class="popu-category-icon mb-3">
-                                <img src="./images/Tecnologias/Elastic_Security_Logo.png" height="64"
-                                    alt="Elastic Security Logo png" class="rounded-circle shadow">
-                            </div>
-                            <div class="popu-category-content">
-                                <h3 class="mb-2 text-dark title">Seguridad</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- popular category end -->
-
-    <!-- How it Work start -->
-    <section class="section bg-light" id="servicios_section">
-        <div class="container ">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <h2 class="title title-line pb-5 text-dark">Nuestros Servicios</h2>
-                        <p class="text-muted para-desc mx-auto mb-1">Encuentra una solución inteligente
-                            para tu negocio y llévalo al nivel máximo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mt-4 pt-2">
-                    <div class="how-it-work-box  p-4 text-center rounded shadow h-100">
-                        <div class="how-it-work-img position-relative rounded-pill mb-3">
-                            <img src="images/how-it-work/Pc-Grafico.png" alt="Pc portatil Grafico"
-                                class="mx-auto d-block mt-2" height="50">
-                        </div>
-                        <div>
-                            <h3 class="title-simple">Consultoría</h3>
-                            <p class="text-muted text-simple justify-text">Consultores expertos y certificados,
-                                orientan a nuestros clientes en la construcción y adopción de soluciones de búsqueda,
-                                observabilidad y seguridad. La metodología de nuestros servicios profesionales para
-                                diseño
-                                e implementación de estas soluciones observan las mejores prácticas definidas por los
-                                fabricantes
-                                en materia de arquitectura, instalación y configuración y las definiciones de marcos de
-                                referencia
-                                como Scrum y PMI, en materia de gestión y ejecución de proyectos.
-                            </p>
-                            <a href="./services-consulting.html" class="text-primary">Leer más <i
-                                    class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 pt-2">
-                    <div class="how-it-work-box  p-4 text-center rounded shadow h-100">
-                        <div class="how-it-work-img position-relative rounded-pill mb-3">
-                            <img src="images/how-it-work/User-Grafico.png" alt="User Grafico"
-                                class="mx-auto d-block mt-2" height="50">
-                        </div>
-                        <div>
-                            <h3 class="title-simple">Servicios Administrados</h3>
-                            <p class="text-muted text-simple justify-text">La práctica de servicios administrados
-                                de NowBit ha sido construida con base en definiciones de marcos de referencia como ITIL,
-                                entre otros, aceptados globalmente como estándares y es prestado por personal capacitado
-                                y
-                                certificado en las tecnologías incluidas en la solución.
-                            </p>
-                            <a href="./services-managed.html" class="text-primary">Leer más <i
-                                    class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4 pt-2">
-                    <div class="how-it-work-box  p-4 text-center rounded shadow h-100">
-                        <div class="how-it-work-img position-relative rounded-pill mb-3">
-                            <img src="images/how-it-work/Dashboard-Grafico.webp" alt="Grafico Dashboard"
-                                class="mx-auto d-block mt-2" height="50" />
-                        </div>
-                        <h3 class="title-simple">Soluciones como Servicio</h3>
-                        <p class="text-muted text-simple justify-text">Ponemos a disposición múltiples formas de adoptar
-                            nuestras
-                            soluciones,
-                            de modo que estén al alcance de todos. Sin importar si se requiere implementar en
-                            las
-                            premisas, en cualquiera de las nubes públicas o si es más conveniente adquirirlas
-                            como
-                            servicio.
-                        </p>
-                        <a href="./services-support.html" class="text-primary">Leer más <i
-                                class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- How it Work end -->
-
-    <!-- counter start -->
-    <section class="section bg-counter position-relative"
-        style="background: url('https://placeholder.com/') center center;">
-        <div class="bg-overlay bg-overlay-gradient"></div>
-        <div class="container">
-            <div class="row" id="counter">
-                <div class="col-md-3 col-6">
-                    <div class="home-counter pt-4 pb-4">
-                        <div class="float-left counter-icon mr-3">
-                            <i class="mdi mdi-magnify h1 text-white"></i>
-                        </div>
-                        <div class="counter-content overflow-hidden">
-                            <div style="display: flex;">
-                                <h4 class="counter-value text-white mb-1">+</h4>
-                                <h4 class="counter-value text-white mb-1" data-count="100000">200000</h4>
-                            </div>
-                            <p class="counter-name text-white text-uppercase mb-0">Búsquedas realizadas</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-6">
-                    <div class="home-counter pt-4 pb-4">
-                        <div class="float-left counter-icon mr-3">
-                            <i class="mdi mdi-gauge h1 text-white"></i>
-                        </div>
-                        <div class="counter-content overflow-hidden">
-                            <div style="display: flex;">
-                                <h4 class="counter-value text-white mb-1">+</h4>
-                                <h4 class="counter-value text-white mb-1" data-count="5000">6000</h4>
-                            </div>
-                            <p class="counter-name text-white text-uppercase mb-0">Millones de métricas tomadas</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-6">
-                    <div class="home-counter pt-4 pb-4">
-                        <div class="float-left counter-icon mr-3">
-                            <i class="mdi mdi-view-dashboard h1 text-white"></i>
-                        </div>
-                        <div class="counter-content overflow-hidden">
-                            <div style="display: flex;">
-                                <h4 class="counter-value text-white mb-1">+</h4>
-                                <h4 class="counter-value text-white mb-1" data-count="1000">1500</h4>
-                            </div>
-                            <p class="counter-name text-white text-uppercase mb-0">Visualizaciones construidas a medida
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-6">
-                    <div class="home-counter pt-4 pb-4">
-                        <div class="float-left counter-icon mr-3">
-                            <i class="mdi mdi-incognito h1 text-white"></i>
-                        </div>
-                        <div class="counter-content overflow-hidden">
-                            <div style="display: flex;">
-                                <h4 class="counter-value text-white mb-1">+</h4>
-                                <h4 class="counter-value text-white mb-1" data-count="1000000">1500000</h4>
-                            </div>
-                            <p class="counter-name text-white text-uppercase mb-0">Eventos de seguridad analizados</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- counter end -->
-
-    <!-- testimonial start -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <h3 class="title title-line-large pb-5 text-dark">¿Qué Dicen Nuestros Clientes?</h3>
-                        <p class="text-muted para-desc mx-auto mb-1">Nuestra responsabilidad, compromiso, eficiencia,
-                            orientación al logro y pasión por el cliente nos ha permitido cosechar múltiples casos de
-                            éxito.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carrusel">
-                <div class="grande">
-                    <div class="justify-content-center align-items-center p-2 cajita" id="cliente1">
-                        <div class="item testi-box rounded p-4 mr-3 ml-3 mb-4 position-relative bg-light ">
-                            <p class="text-muted mb-5 text-simple justify-text">“Seleccionamos a NowBit en el 2020 para
-                                acompañarnos en un proyecto muy grande, porqué consideramos que tienen no solo las
-                                certificaciones y experiencia en Elasticsearch sino porqué además está cerca a nosotros
-                                y esto nos permitió armar un equipo de trabajo que fue una extensión de nuestro equipo
-                                interno”
-                            </p>
-                            <div class="clearfix">
-                                <div class="testi-img float-left mr-3">
-                                    <img src="./images/Daniel_Eduardo_Masson_El_Tiempo.webp"
-                                        height="64"
-                                        alt="Daniel Eduardo Masson IT Services Manager en El Tiempo Casa Editorial"
-                                        class="rounded-circle shadow">
-                                </div>
-                                <h5 class="f-18 pt-1 title-simple">Daniel Eduardo Masson</h5>
-                                <p class="text-muted mb-0">IT Services Manager en El Tiempo Casa Editorial</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="justify-content-center align-items-center p-2 cajita" id="cliente2">
-                        <div class="item testi-box rounded p-4 mr-3 ml-3 mb-4 position-relative bg-light ">
-                            <p class="text-muted mb-5 text-simple justify-text">“La solución de Observabilidad como
-                                Servicio de
-                                NowBit nos entregó más información de la que esperábamos, más que el monitoreo, a través
-                                de
-                                Machine Learning logramos hacer proyecciones de crecimiento, perfilamiento de usuarios e
-                                identificar las aplicaciones con mayor demanda, generando valor a nuestro cliente.”
-                            </p>
-                            <div class="clearfix">
-                                <div class="testi-img float-left mr-3">
-                                    <img src="./images/Milena_Pico_Romero_Gerente_Operaciones_en_Agilitix.webp"
-                                        height="64"
-                                        alt="Milena Pico Romero Gerente De Operaciones en Agilitix Serban Group"
-                                        class="rounded-circle shadow">
-                                </div>
-                                <h5 class="f-18 pt-1 title-simple">Milena Pico Romero</h5>
-                                <p class="text-muted mb-0">Gerente De Operaciones en Agilitix Serban Group</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="botonesC">
-                    <span class="mdi mdi-chevron-left p-2 punto"></span>
-                    <span class="mdi mdi-chevron-right p-2 punto"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="section bg-light">
-        <div class="container  ">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <h3 class="title title-line-large pb-5 text-dark">Compañías que Confían en Nosotros</h3>
-                        <p class="text-muted para-desc mx-auto mb-1">La confiabilidad es nuestra insignia por ello
-                            nuestros clientes nos seleccionan.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Experian.webp" height="50" alt="Logo Escala de Grises Experian">
-                </div>
-                <!--end col-->
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Claro.webp" height="50" alt="Logo Escala de Grises Claro">
-                </div>
-                <!--end col-->
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Comision_verdad.webp" height="50"
-                        alt="Logo Escala de Grises Comision verdad">
-                </div>
-                <!--end col-->
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Agilitix.webp" height="50" alt="Logo Escala de Grises Agilitix">
-                </div>
-                <!--end col-->
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/LineaDirecta.webp" height="50" alt="Logo Escala de Grises LineaDirecta">
-                </div>
-                <!--end col-->
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Globalhitss.webp" height="50" alt="Logo Escala de Grises Globalhitss">
-                </div>
-                <!--end col-->
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Veritrade.webp" height="50" alt="Logo Escala de Grises Veritrade">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Hopla.webp" height="50" alt="Logo Escala de Grises Hopla">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Indra.webp" height="50" alt="Logo Escala de Grises Indra">
-                </div>
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/porvenir.webp" height="50" alt="Logo Escala de Grises Porvenir">
-                </div>
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Ciosa.webp" height="50" alt="Logo Escala de Grises Ciosa">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/SecureIT.webp" height="50" alt="Logo Escala de Grises SecureIT">
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/digiware.png" height="50" alt="Logo Escala de Grises Digiware">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/sec_bogota.png" height="50" alt="Logo Escala de Grises Bogota">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/pichincha.png" height="50" alt="Logo Escala de Grises Pichincha">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/colpensiones.png" height="50" alt="Logo Escala de Colpensiones">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/frontera.png" height="50" alt="Logo Escala de Frontera">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/tigo.png" height="50" alt="Logo Escala de Grises Tigo">
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Summa.webp" height="50" alt="Logo Escala de Grises Summa">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/ElTiempo.webp" height="50" alt="Logo Escala de Grises ElTiempo">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Uala.webp" height="50" alt="Logo Escala de Grises Uala">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2 text-center">
-                    <img src="images/clients/Arus.webp" height="50" alt="Logo Escala de Grises Arus">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- testimonial end -->
-
-    <!-- blog start -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <h2 class="title title-line pb-5 text-dark">Casos de Uso</h2>
-                        <p class="text-muted para-desc mx-auto mb-1">NowBit, creando oportunidades que nos permiten
-                            cumplir sueños.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <div class="blog position-relative overflow-hidden shadow rounded h-100">
-                        <div class="position-relative overflow-hidden">
-                            <img src="./images/Servicios/oilandgas.webp" class="img-fluid rounded-top"
-                                alt="Fotografia Atardecer planta petrolera">
-                            <div class="overlay rounded-top bg-dark"></div>
-                        </div>
-                        <div class="content p-4 ">
-                            <h2><a href="./solutions-search.html#usecase" class="title text-dark">Soluciones de búsqueda
-                                    para <br>Oil
-                                    &
-                                    Gas</a></h2>
-                            <p class="text-muted text-simple justify-text">Es muy común que los geólogos y analistas
-                                inviertan mucho de
-                                su tiempo en buscar información en cientos o en ocasiones...</p>
-                            <a href="./solutions-search.html#usecase" class="text-dark readmore text-simple">Leer más <i
-                                    class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <div class="blog position-relative overflow-hidden shadow rounded h-100">
-                        <div class="position-relative overflow-hidden">
-                            <img src="./images/Servicios/retail.webp" class="img-fluid rounded-top"
-                                alt="Foto tarjeta credito computador portatil compras en linea">
-                            <div class="overlay rounded-top bg-dark"></div>
-                        </div>
-                        <div class="content p-4">
-                            <h2><a href="./solutions-search.html#usecase" class="title text-dark">Soluciones de búsqueda
-                                    para
-                                    <br>E-commerce y retail</a></h2>
-                            <p class="text-muted text-simple justify-text">Todos los portales transaccionales
-                                que proveen bienes y servicios de consumo, conectando a los consumidores con los
-                                proveedores
-                                de éstos, requieren un buscador inteligente...
-                            </p>
-                            <a href="./solutions-search.html#usecase" class="text-dark readmore text-simple">Leer más <i
-                                    class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <div class="blog position-relative overflow-hidden shadow rounded h-100">
-                        <div class="position-relative overflow-hidden">
-                            <img src="./images/Servicios/abogado.webp" class="img-fluid rounded-top"
-                                alt="Foto martillo juez madera">
-                            <div class="overlay rounded-top bg-dark"></div>
-                        </div>
-                        <div class="content p-4">
-                            <h2><a href="./solutions-search.html#usecase" class="title text-dark">Soluciones de búsqueda
-                                    para firmas de abogados</a></h2>
-                            <p class="text-muted text-simple justify-text">Los abogados y sus asistentes
-                                jurídicos dedican horas a buscar la información que requieren, debido
-                                principalmente a la cantidad de fuentes...
-                            </p>
-                            <a href="./solutions-search.html#usecase" class="text-dark readmore text-simple">Leer más <i
-                                    class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <div class="blog position-relative overflow-hidden shadow rounded h-100">
-                        <div class="position-relative overflow-hidden">
-                            <img src="./images/Servicios/finance.webp" class="img-fluid rounded-top"
-                                alt="Foto Pantalla Grafico Velas Japonesas">
-                            <div class="overlay rounded-top bg-dark"></div>
-                        </div>
-                        <div class="content p-4">
-                            <h2><a href="./solutions-observability.html#usecase" class="title text-dark">Soluciones de
-                                    observabilidad para
-                                    finanzas
-                                </a></h2>
-                            <p class="text-muted text-simple justify-text">La gran mayoría de las entidades financieras
-                                en su
-                                arquitectura de TI empresarial cuentan con bus transaccional,
-                                que se encarga de conectar las aplicaciones satélites...</p>
-                            <a href="./solutions-observability.html#usecase" class="text-dark readmore text-simple">Leer
-                                más <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <div class="blog position-relative overflow-hidden shadow rounded h-100">
-                        <div class="position-relative overflow-hidden">
-                            <img src="./images/Servicios/seguridad.webp" class="img-fluid rounded-top"
-                                alt="Foto Pantalla con Codigo de Programacion">
-                            <div class="overlay rounded-top bg-dark"></div>
-                        </div>
-                        <div class="content p-4">
-                            <h2><a href="./solutions-security.html#usecase" class="title text-dark">Soluciones de
-                                    ciberseguridad</a>
-                            </h2>
-                            <p class="text-muted text-simple justify-text">Todas las empresas nos preocupamos por tener
-                                la seguridad de TI
-                                en el nivel más alto posible. Sin embargo, los altos costos de las soluciones de
-                                seguridad
-                                asociados a las múltiples tecnologías ...
-                            </p>
-                            <a href="./solutions-security.html#usecase" class="text-dark readmore text-simple">Leer más
-                                <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                    <div class="blog position-relative overflow-hidden shadow rounded h-100">
-                        <div class="position-relative overflow-hidden">
-                            <img src="./images/Servicios/server.webp" class="img-fluid rounded-top"
-                                alt="Fotografia servidores">
-                            <div class="overlay rounded-top bg-dark"></div>
-                        </div>
-                        <div class="content p-4">
-                            <h2><a href="./solutions-observability.html#usecase" class="title text-dark">Soluciones de
-                                    observabilidad para
-                                    plataformas basadas en microservicios
-                                </a></h2>
-                            <p class="text-muted text-simple justify-text">Muchas organizaciones están migrando sus
-                                plataformas de TI
-                                heredadas a
-                                nuevas tecnologías basadas en microservicios...</p>
-                            <a href="./solutions-observability.html#usecase" class="text-dark readmore text-simple">Leer
-                                más <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-            </div>
-        </div>
-    </section>
-    <!-- blog end -->
-
-    <!--Footer start-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                    <a href="javascript:void(0)"><img src="images/logo-light.png" height="20" alt="Logo NowBit"></a>
-                    <p class="mt-4 text-simple">NowBit, expertos en soluciones de búsqueda, observabilidad y seguridad
-                        utilizando el
-                        Elastic Stack.</p>
-                    <ul class="social-icon social list-inline mb-0">
-                        <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/NowBit/"
-                                class=""><i class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a target="_blank"
-                                href="https://api.whatsapp.com/send?phone=573053009589&text=Buenos%20días,%20me%20gustaría%20recibir%20más%20información,%20estoy%20interesado%20en%20conocer%20más%20sobre%20Elastic."
-                                class=""><i class="mdi mdi-whatsapp"></i></a></li>
-                        <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/company/nowbit1"
-                                class=""><i class="mdi mdi-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a target="_blank"
-                                href="https://www.youtube.com/channel/UCzV_ojO4gpGyQXAiORBbf-g" class=""><i
-                                    class="mdi mdi-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <p class="text-white mb-4 footer-list-title">Nuestra Empresa</p>
-                    <ul class="list-unstyled footer-list">
-                        <li><a href="about.html" class="text-foot text-simple"><i
-                                    class="mdi mdi-chevron-right "></i>¿Quienes
-                                Somos?</a></li>
-                        <li><a href="contact.html" class="text-foot text-simple"><i class="mdi mdi-chevron-right"></i>
-                                Contacto</a>
-                        </li>
-                        <li><a href="blog-grid.html" class="text-foot text-simple"><i class="mdi mdi-chevron-right"></i>
-                                Comunidad</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <p class="text-white mb-4 footer-list-title">Información Legal</p>
-                    <ul class="list-unstyled footer-list">
-                        <li><a href="https://nowbit.s3.us-east-1.amazonaws.com/PoliticaSARLAFTNowBit.pdf" class="text-foot text-simple"><i
-                            class="mdi mdi-chevron-right"></i>Política SARLAFT</a>
-                          </li>
-                        <li><a href="nowbit_tratamiento_datos.html" class="text-foot text-simple"><i
-                                    class="mdi mdi-chevron-right"></i>Política de privacidad</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <p class="text-white mb-4 footer-list-title f-17">Contacto</p>
-                    <ul class="list-unstyled text-foot mt-4 mb-0">
-                        <li class="text-simple">+57 601 5147685</li>
-                        <li class="text-simple">Info@Nowbit.co</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer end -->
-
-    <!-- Back to top -->
-    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
-        <i class="mdi mdi-chevron-up d-block"> </i>
-    </a>
-    <!-- Back to top -->
-
-    <!-- javascript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/plugins.js"></script>
-
-    <!-- selectize js -->
-    <script src="js/selectize.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/counter.int.js"></script>
-
-    <script src="js/app.js"></script>
-    <script src="js/home.js"></script>
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7111609.js"></script>
-    <!-- End of HubSpot Embed Code -->
+  <!-- HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7111609.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,223 @@
+<div class="blog-content">
+  <div class="job-detail-desc justify-text mx-5">
+    <p class="justify-text">
+      La respuesta corta a ¿Qué es Elasticsearch?, se sintetiza en lo siguiente:
+    </p>
+    <blockquote class="blockquote p-4 bg-muted rounded-lg my-4">
+      Elastisearch es una solución de búsqueda de código abierto basada en Lucene y desarrollada por Shay Banon
+    </blockquote>
+  </div>
+  
+  <div class="job-detail-desc">
+    <p class="justify-text mx-5">
+      Sin embargo, hay una diferencia muy grande entre lo que es Elasticsearch y todas las soluciones que se pueden atender mediante el Elastic Stack; razón por la cuál, vamos a entender los conceptos generales del stack para luego dar algunos ejemplos de casos de uso concretos de la industria.
+    </p>
+  </div>
+  
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-2 text-center">
+        <img 
+          class="img-fluid rounded-lg" 
+          src="https://s3.amazonaws.com/www.nowbit.co/images/Tecnologias/8.png" 
+          style="height: 120px;"
+          alt="Elasticstack"
+        />
+        <p>Elasticstack</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="job-detail-desc">
+    <p class="justify-text mx-5">
+      En primer lugar, está el concepto Elastic Stack (ELK), el cual es el nombre que se le otorgó al conjunto de productos que Elastic, como compañía liberó. Inicialmente, estos eran Elasticsearch, Logstash y Kibana; los cuales detallaremos a continuación:
+    </p>
+  </div>
+
+  <div class="container py-4">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5 col-md-2 text-center">
+        <img 
+          class="img-fluid rounded-lg" 
+          src="https://s3.amazonaws.com/www.nowbit.co/images/Tecnologias/4.png" 
+          style="height: 300px;"
+          alt="Elasticsearch"
+        />
+      </div>
+      <div class="col-lg-7">
+        <div class="job-detail-desc mx-5">
+          <h2>Elasticsearch</h2>
+          <p class="justify-text">
+            Es el corazón del stack, siendo el motor de almacenamiento, búsqueda, procesamiento e indexación de datos. Se caracteriza por ser distribuido, lo que permite su crecimiento horizontal almacenando grandes cantidades de datos no estructurados mediante documentos JSON. A diferencia de otros motores similares, su diferencial es la velocidad, pues es excelente para buscar y visualizar información en tiempo real.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-7">
+        <div class="job-detail-desc mx-5">
+          <h2>Logstash</h2>
+          <p class="justify-text">
+            La forma más sencilla de definir Logstash, es describirlo como un ETL (acrónimo del concepto Extract Transform, Load). En otras palabras, Logtash permite llevar información desde cualquier origen a Elasticsearch. Por ejemplo, si los sistemas de información de tu compañía almacenan su información en bases de datos estructuradas como SAP HANA, Oracle, SQL Server, MySQL o cualquier otro, Logtash puede recolectar y cargar la información para que puedas buscarla, analizarla y visualizarla en tiempo real, básicamente, estás monitoreando tu información. También es posible extraer información de todo tipo de archivos y orígenes de datos, algunos ejemplos son archivos de logs, XML, csv, API-REST, entre otros.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-2 text-center">
+        <img 
+          class="img-fluid rounded-lg" 
+          src="https://s3.amazonaws.com/www.nowbit.co/images/Tecnologias/6.png" 
+          style="height: 300px;"
+          alt="Logstash"
+        />
+      </div>
+    </div>
+  </div>
+  
+  <div class="container py-4">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5 col-md-2 text-center">
+        <img 
+          class="img-fluid rounded-lg" 
+          src="https://s3.amazonaws.com/www.nowbit.co/images/Tecnologias/5.png" 
+          style="height: 300px;"
+          alt="Kibana"
+        />
+      </div>
+      <div class="col-lg-7">
+        <div class="job-detail-desc mx-5">
+          <h2>Kibana</h2>
+          <p class="justify-text">
+            Tiene dos funciones concretas, por un lado, es la interfaz gráfica que permite administrar todas las herramientas del stack y por otro, es la herramienta de visualización para la creación de tableros de control, mapas, informes, entre otros atractivos para visualizar información. Mantiene también la gestión de herramientas adicionadas al Stack como los módulos de APM, Machine Learning, Canvas, Logging, Infraestructure y muchos otros que permiten ver la información de forma más atractiva para casos de uso específicos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container py-4">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-7">
+        <div class="job-detail-desc mx-5">
+          <h2>Beats</h2>
+          <p class="justify-text">
+            Aunque no hace parte del acrónimo ELK, los Beats son clientes ligeros de recolección de información que, al igual que Logstash, cargan información en Elasticsearch.
+          </p>
+          <p class="justify-text">
+            Existen Beats de todo tipo, algunos permiten saber la disponibilidad y métricas de desempeño de servidores, otros recolectan métricas de servicios cloud como Lambda, información del tráfico de red de un Sistema Operativo, logs de Kubernetes, métricas de instancias en AWS o Azure, desempeño de Apache, SQL entre muchas otras opciones. Además de los Beats propios de Elastic, la comunidad OpenSource tiene publicados muchos otros Beats. ¡Nuestro equipo también ha publicado Beats!
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-2 text-center">
+        <img 
+          class="img-fluid rounded-lg" 
+          src="https://s3.amazonaws.com/www.nowbit.co/images/Tecnologias/7.png" 
+          style="height: 300px;"
+          alt="beats_logo.png"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h2>APM</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      El módulo de Aplication Monitoring del Elastic Stack fue incluido recientemente y permite monitorear el desempeño de aplicaciones desarrolladas en diferentes tipos de lenguajes. Utiliza módulos por cada tipo de lenguaje que envían la información del comportamiento del código directamente a Elasticsearch.
+    </p>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h2>Machine Learning</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Toda la información recolectada e indexada en Elasticsearch puede ser analizada para buscar anomalías y patrones que permitan predecir comportamientos o alertar comportamientos inusuales. El módulo de Machine Learning permite gobernar todas esas funcionalidades para hacer que los datos generen mayor valor.
+    </p>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h2>Arquitectura de ELK</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Este conjunto de herramientas conforman la arquitectura de Elastic Stack:
+    </p>
+  </div>
+
+  <div class="container py-4">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 text-center mb-4">
+        <img 
+          class="img-fluid rounded-lg" 
+          src="https://s3.amazonaws.com/www.nowbit.co/images/Tecnologias/9.png" 
+          style="height: 300px;"
+          alt="Arquitectura ELK"
+        />
+      </div>
+      <div class="col-lg-6">
+        <div class="job-detail-desc mx-5">
+          <p class="justify-text">
+            En la capa superior del Stack se encuentra Kibana, en el medio Elasticsearch y en la parte de abajo Beats y Logstash como herramientas de recolección e inserción de información.
+          </p>
+          <p class="justify-text">
+            Con lo anterior, no queremos decir que únicamente con Beats y Logstash sea posible insertar información en Elasticsearch, puedes incluso insertar datos desde los lenguajes de programación más comunes así como haciendo uso del API REST.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h2>Casos de Uso</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Ahora bien, entendiendo qué es el Elastic Stack, ya es más fácil saber qué se puede hacer con él.
+    </p>
+    <p class="justify-text">
+      Desde el punto de vista de Elastic, cada tipo de necesidad atendida con Elastic Stack se denomina un caso de uso. Hay muchos documentados en el sitio web de Elastic, pero también hay muchos otros que Elastic ni siquiera conoce.
+    </p>
+    <p class="justify-text">
+      Usamos Elastic a diario y muchas veces no sabemos que lo hacemos:
+    </p>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h3>Uber</h3>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Cuando realizas una búsqueda de un vehículo en Uber, así como el seguimiento en tiempo real de tu servicio, todo esto está funcionando sobre Elasticsearch. Para el caso de los conductores de Uber, los mapas de calor en ala cuidad, en donde se encuentran las tarifas dinámicas, son posibles gracias a Elasticsearch. Toda esta información es generada por la aplicación, indexada por Elasticsearch y utilizada por la misma aplicación y todo, en tiempo real.
+    </p>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h3>Tinder</h3>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      La famosa aplicación de citas, utiliza el poder de búsqueda de Elasticsearch para cruzar intereses comunes, ubicación geográfica y otras variables para analizar y entregar en tiempo real, las coincidencias más relevantes para los usuarios son procesadas y analizadas en tiempo real.
+    </p>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h3>Walmart</h3>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Walmart tiene alrededor de 11.000 tiendas en más de 23 países y gracias a Elasticsearch, pueden saber con exactitud cuántos bananos venden en todas sus tiendas en un solo punto y en tiempo real. Esta información permite tomar decisiones oportunas en la cadena de abastecimiento de Walmart, manteniendo al día la operación de los almacenes.
+    </p>
+  </div>
+</div>
+

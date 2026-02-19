@@ -1,0 +1,140 @@
+<div class="blog-content">
+  <div class="job-detail-desc justify-text mx-5">
+    <p class="justify-text">
+      En este primer blog, me gustaría destacar por qué Elasticsearch es considerado uno de los mejores motores de búsqueda para tantos casos de uso, junto a su herramienta de visualización, Kibana.
+    </p>
+    <p class="justify-text">
+      Elasticsearch no es un software de monitoreo ni un <b>SIEM</b> o cualquier herramienta semejante, es un <b>motor de búsqueda</b>, él solo se encarga de <b>almacenar</b> y <b>buscar</b>. <i>¿Pero igualmente podemos usarlo para todo eso, verdad?</i> Sí, y a continuación unas de las razones:
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <ul class="">
+      <li>Escalabilidad y alta disponibilidad.</li>
+      <li>Dinamicidad en la entrada de datos.</li>
+      <li>Búsquedas</li>
+      <li>Kibana</li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <h2>Escalabilidad</h2>
+  </div>
+
+  <div class="job-detail-desc">
+    <p class="justify-text mx-5">
+      Elasticsearch funciona con un modelo de arquitectura basado en <b>nodos</b> (generalmente un servidor). Cada nodo puede pertenecer a un rol especifico o a varios: Master elegible, machine learning, data node o ingest node. Con un nodo o más, tenemos un <b>cluster</b>.
+    </p>
+  </div>
+
+  <div class="job-detail-desc mx-5">
+    <ul class="">
+      <li>
+        <p class="justify-text">
+          <b>Master Elegible:</b> Al tener un cluster debemos escoger nuestros candidatos para elegir un nodo <b>maestro</b>. Elasticsearch automáticamente elegirá de los nodos con este rol al que será la cabeza de operaciones de todo el cluster, mediante un proceso de votación en el que participan todos los master elegibles.
+        </p>
+      </li>
+      <li>
+        <p class="justify-text">
+          <b>Machine Learning:</b> Los nodos con este rol se encargaran de ejecutar las tareas del API de machine learning.
+        </p>
+      </li>
+      <li>
+        <p class="justify-text">
+          <b>Data Node:</b> Estos nodos contienen los <b>índices</b> (Compuestos por uno o mas <b>shards</b>, pero de eso hablaremos más adelante), los cuales a su vez, contienen la data que hemos guardado en Elasticsearch en forma de <b>documentos</b> (objetos <b>JSON</b>).
+        </p>
+      </li>
+      <li>
+        <p class="justify-text">
+          <b>Ingest Node:</b> Los Ingest Node son capaces de ejecutar tareas de preprocesamiento a nuestra data, esto significa que la podremos modificar a nuestro gusto antes de que sea indexada en Elasticsearch.
+        </p>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Elasticsearch guarda nuestra información en <b>indices</b>; un indice potencialmente puede almacenar una inmensa cantidad de información la cual podría exceder los limites de nuestro hardware. Es por eso que ElasticSearch nos ofrece la posibilidad de subdividir un indice a través de <b>shards</b>. Los shards son instancias individuales de nuestra data que pueden ser repartidas a través de los data nodes, permitiendo paralelismo (osea más velocidad) al realizar consultas y brindando <b>alta disponibilidad</b>. <i>Nota nerd: Elasticsearch está construido sobre lucene, cada shard es una instancia de esta librería.</i>
+    </p>
+    <p class="justify-text">
+      Teniendo en cuenta este modelo, en el caso de tener problemas de desempeño, tendremos que analizar qué debemos expandir: Nuestros nodos, nuestros shards o nuestros indices. Como consecuencia, incrementaremos la capacidad de procesamiento, memoria, espacio en disco o velocidad en la consulta de la información, según se requiera (¡Por algo se llama <b>Elastic</b>-Search!).
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <h2>Dinamicidad en la entrada de datos</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Algunos softwares de monitoreo, como <b>PRTG</b>, están especializados en el análisis e históricos de métricas numéricas y booleanas (True o False), dejando casi que de lado las cadenas de texto e impidiendo hacer una correlación con nuestras variables de negocio. En cambio, Elasticsearch, admite la recepción y distinción de una múltiple cantidad de tipos de datos no solo numéricos: fechas, cadenas de texto, binarios, rangos, objetos, puntos o figuras geográficas, IP's y otros más complejos, permitiéndonos tener un rango de observabilidad completo y características especiales como: filtros por rango de fechas o valores, filtros por ubicación, etc.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <h2>Búsquedas</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Otro de los fuertes de Elasticsearch, es su poderosisima capacidad de <b>búsqueda</b>, dentro de la cuál podemos aprovechar su <b>velocidad</b> en esta tarea con el poder del <b>análisis</b> de información a través de sofisticados <b>querys</b> en data estructurada, no estructurada o data basada en el tiempo.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <h2>Querys</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Elasticsearch provee su propio Lenguaje Query DSL basado en JSON para definir consultas, con el cuál podremos buscar y filtrar según sea el caso en un indice o más. Construir una consulta con muchos filtros y restricciones puede llevarnos a encontrar exactamente la información que queremos, pero probablemente dejemos por fuera otra que nos pueda servir, por otro lado, si realizamos una mucho mas flexible encontraremos mucha información, pero puede que se nos cuele uno que otro documento irrelevante. Todo depende del caso de uso.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <h2>Análisis</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Como mencioné al principio, recordemos que Elasticsearch es un <b>motor de búsqueda</b>, por lo tanto, sus funciones de análisis y búsqueda nos brindarán un acceso personalizado y más rápido a los datos que necesitemos. Elasticsearch define el término análisis como:
+    </p>
+    <blockquote class="blockquote p-3 bg-muted rounded-lg my-4">
+      <p class="justify-text text-muted font-italic mb-0">
+        "Análisis es el proceso de convertir texto, como el cuerpo de cualquier correo electrónico, en tokens o términos que se agregan al índice invertido para la búsqueda"
+      </p>
+    </blockquote>
+    <p class="justify-text">
+      A grandes rasgos, el indice invertido es una estructura en memoria que almacena la frecuencia y en qué documentos se encuentra un <b>token</b> (generalmente una palabra) en un indice, por lo tanto, acá es donde vienen los querys a consultar qué documentos debería traer. Teniendo en cuenta lo anteriormente dicho, lo importante de este proceso y la generación de tokens, es que es realizado por algo a lo que llamamos un <b>analyzer</b>, el cual puede ser creado a nuestro gusto encontrando patrones en textos, desarmandolos o modificandolos. La creación de este proceso nos da paso a personalizar comportamientos de búsqueda por cada caso de uso deseado.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <h2>Kibana</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      Para finalizar este artículo, les presento Kibana: Nuestra ventana al Elastic Stack. Esta herramienta nos brinda la posibilidad de administrar todos los componentes del stack y visualizar nuestra información a través de distintos módulos, visualizaciones y dashboards interactivos. Dentro de la gran cantidad de módulos, podemos crear vistas de monitoreo para nuestra data, logging, APM u operaciones de seguridad. Además, nos permite descargar reportes CSV de lo que sea que estemos viendo. Acá un ejemplo de lo que podemos hacer con Kibana:
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-5 mb-3" style="text-align: center;">
+    <img 
+      class="img-fluid rounded-lg" 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-Elastic_en_detalle/1.png"
+      alt="Kibana Dashboard"
+    />
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <h2>Conclusión</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-5">
+    <p class="justify-text">
+      En nuestras manos tenemos una herramienta <b>open-source</b>, poderosa en velocidad, entrada de datos y agilidad en lo que se refiere a escalar horizontalmente y correlacionar distintos tipos de información. Con una infinidad de posibles orígenes de datos, Elasticsearch como motor de búsqueda, es uno de los mejores software para aplicar en múltiples casos de uso. Los invito a hacer uso del stack, y descubrir qué pueden hacer con él. Con esto, doy por terminado el primer de lo que espero sea una larga lista de artículos sobre el Elastic Stack. Espero haya sido de su agrado y utilidad. Si tienen alguna duda o inquietud sobre el Elastic Stack, ¡no duden en contactarnos!
+    </p>
+  </div>
+</div>
+

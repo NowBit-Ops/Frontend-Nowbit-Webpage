@@ -1,0 +1,97 @@
+<div class="blog-content">
+  <div class="job-detail-desc justify-text">
+    <p class="justify-text">
+      Para aquellos que no estén muy familiarizados con Elasticsearch, los conceptos de búsqueda y filtro pueden llegar a confundirse; para entenderlos con facilidad, abordaremos primero las definiciones de búsqueda y filtro, luego entenderemos el comportamiento de un campo en una búsqueda y finalmente veremos cómo se refleja éste en la estructura de un query de Elasticsearch.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-12 job-detail-desc justify-text">
+      <p class="">
+        Empecemos por las definiciones. El diccionario de la RAE define Buscar cómo un "sistema de selección en un proceso según criterios previamente establecidos" Por ejemplo, todos los días cuando me levanto, voy a la cocina, abro la alacena y entre todo lo que hay allí, saco el paquete de café, de este último, saco tres cucharadas de café en polvo para prepararme un latte.
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-12" style="text-align: center;">
+      <img 
+        src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-elastic-busqueda-o-filtro/2.webp"
+        alt="Búsqueda"
+        class="img-fluid mx-auto d-block rounded-lg"
+        style="max-width: 100%; height: auto;"
+      />
+    </div>
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="justify-text">
+      La acción que hago cuando saco el café, es una búsqueda. Entre mi DataSet original que es todo lo que guardo en la alacena, estoy buscando el producto que cumpla con una condición, para este ejemplo, esa condición es que sea café; ahora, en el momento que yo separo tres cucharadas para prepararme mi latte, estoy filtrando, puesto que estoy tomando el resultado de mi búsqueda y estoy seleccionando una parte de este resultado.
+    </p>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-elastic-busqueda-o-filtro/a27d24_36ded574eacd4c7b8ab95a0499ae7a6a_mv2.jpg"
+      alt="Filtro"
+      class="img-fluid mx-auto d-block rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="justify-text">
+      Teniendo estos conceptos más claros, podemos entender el comportamiento de un campo en una búsqueda. Cuando estamos implementando un buscador, pueden surgir dudas de si un campo aplica para una búsqueda o un filtro. Parece trivial, pero puede no ser una tarea fácil, pues un campo puede ser buscado y a la vez ser usado como un filtro. De manera que para poder definir a cuál aplica, necesitamos entender que somos humanos y nuestras acciones al buscar tienden más a lo general que a lo específico, para lo cual es importante tener en cuenta una serie de tips que nos ayuden a diferenciar.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc">
+    <ol class="">
+      <li>
+        Los campos numéricos, por ejemplo, un precio; son campos que por su naturaleza deben ser un filtro.
+      </li>
+      <li>
+        Si un campo es un ID, sea numérico o alfanumérico, pierde sentido usarlo como filtro y si necesitamos proveer esta característica, este campo debe ser usado en una búsqueda.
+      </li>
+      <li>
+        Los campos muy específicos normalmente deben proveer al usuario un filtro, puesto que es poco probable que los usen en la búsqueda.
+      </li>
+      <li>
+        Las búsquedas suelen estar relacionadas con campos largos de texto o la combinación de varios campos cortos
+      </li>
+    </ol>
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="justify-text">
+      Veamos un ejemplo real, al realizar una búsqueda en eBay. En la imagen podemos ver:
+    </p>
+  </div>
+  
+  <div class="job-detail-desc">
+    <ol class="">
+      <li>
+        En el numeral 1 la búsqueda, que para este caso es una Nintendo Switch.
+      </li>
+      <li>
+        En el numeral 2 vemos un filtro que corresponde al código de región, algo que es poco probable que un usuario escriba en la barra de búsqueda, sin embargo, si las llegáramos a colocar, se aplicarían a la búsqueda.
+      </li>
+      <li>
+        En el numeral 3 vemos el filtro de precio, que como podemos ver me sugiere unos rangos de precio o me permite ingresar uno.
+      </li>
+    </ol>
+  </div>
+  
+  <div style="text-align: center; margin: 2rem 0;">
+    <img 
+      src="https://s3.amazonaws.com/www.nowbit.co/images/blogs-image/blog-elastic-busqueda-o-filtro/08b617_54bd71f5af084e87b12fc2a227d6b624_mv2.png"
+      alt="Ejemplo eBay"
+      class="img-fluid mx-auto d-block rounded-lg"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+  
+  <div class="job-detail-desc justify-text">
+    <p class="justify-text">
+      Retomando la metáfora del café, seria una experiencia similar a buscar café con los ojos vendados y seleccionar la cantidad de café con un tenedor. Entendiendo estos conceptos estamos dando un primer paso para implementar un buscador en tu portal de forma correcta. Realizando búsquedas efectivas y precisas lograremos que los usuarios se sientan cómodos usando nuestro buscador.
+    </p>
+  </div>
+</div>
+

@@ -1,0 +1,414 @@
+<div class="blog-content">
+  <div class="job-detail-desc justify-text mx-3">
+    <p class="justify-text">
+      En <b>NowBit</b> ofrecemos un servicio de diagnóstico para clientes que usan Elasticsearch,
+      nuestro <b>Elastic Quick Review</b>. En éste artículo. consolidamos los hallazgos más comunes
+      que hemos encontrado luego de ejecutar decenas de EQR:
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <h2>1. Oversharding:</h2>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      El Oversharding es un problema muy común en despliegues de Elasticsearch, para entenderlo, es necesario dar un resumen de la base del funcionamiento de un cluster de Elasticsearch.
+    </p>
+    <p class="justify-text">
+      En primer lugar, un cluster se compone de varios nodos de Elasticsearch (al menos 3 en entornos productivos), en un cluster puedes alojar uno o más índices, donde viven los datos (documentos en formato json) y finalmente, cada índice se compone de uno o más shards (de dos tipos: primarios y réplicas). Los shards son la unidad mínima de trabajo de Elasticsearch y son una instancia de Lucene (sobre lo que está escrito Elasticsearch), funcionando para ofrecer las capacidades que Elasticsearch ofrece.
+    </p>
+    <p class="justify-text">
+      Los shards tienen un costo, requieren CPU, memoria y almacenamiento para su funcionamiento, un problema de oversharing no es más que la incapacidad del hardware para soportar la cantidad de shards creados.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Muchos shards de poco tamaño, causado por creación de shards a diario en casos de observabilidad y seguridad (logs y métricas).</p>
+            <p>Shards de gran tamaño (más de 50GB), causado por la creación de indices únicos en casos de datos basados en el tiempo.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>Consolidación de shads, de un tamaño no mayor a los 50GB.</li>
+          <li>Eliminación de índices automático a través de Index Lifecycle Management.</li>
+          <li>Congelamiento de índices históricos.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>2. Cluster en estado amarillo o rojo:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Este es una situación más común de lo que se puedan imaginar y sucede porque los shards (de los que hablamos antes), no se están asignando correctamente:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <b>Estado amarillo</b>: Sucede cuando los shards tipo réplica no tienen nodos de Elasticsearch para instanciarse, en general es porque el cluster no tiene nodos suficientes para ello, pues un shard réplica nunca se instanciará donde está su dhard primario.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Estado rojo:</b> Sucede porque un shard primario no se puede instanciar, esto puede ser grave, porque los datos no podrán ser leídos ni escritos.
+        </p>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Para el estado amarillo, la causa principal es que hace falta adicionar nodos para las réplicas.</p>
+            <p>Para el estado rojo, la causa principal es que algún nodo que funcionaba ya no está operativo o que los datos en disco perdieron su integridad y no son consistentes.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>
+            Es necesario un diagnóstico detallado para poder definir un plan de solución. Redimensionar el cluster en caso de cluster amarillo y recuperar datos a través de copias de respaldo para estado rojo, son las estretegias más comunes en ambos casos.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>3. Login anónimo:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Muchos clientes utilizan la licencia Basic de Elasticsearch (gratuita) y tienen la idea errónea de que esa licencia no tiene características de seguridad (en versiones anteriores era así), por lo que no habilitan la autenticación lo que trae como consecuencia problemas de seguridad y en muchos casos, pérdida de datos fruto de ataques a clusters desprotegidos con acceso público.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>En un inicio, la característica de autenticación era licenciada y no se incluía en la licencia Basic, por lo que implementaciones de esta edición quedaron desprotegidas.</p>
+            <p>Desconocimiento de las características incluidas en cada versión de Elasticsearch.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>
+            Actualizar al menos a la versión 7.2 y activar la seguridad básica Elasticsearch (RBAC). Para integración con gestores de identidades por LDAP, Active Directory, OAuth, SAML entre otros, es requerido licenciamiento Platinum como mínimo.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>4. Campos mal definidos y deficiencias usando ECS:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      La creciente adopción de los casos de uso de Elastic en términos de Observabilidad (Logging, Metrics, APM) y Seguridad (XDR y SIEM), hizo necesario que Elastic definiera un estándar de nomenclatura para los campos en los índices de Elasticsearch, esto se conoce como el Elastic Common Schema.
+    </p>
+    <p>
+      El ECM permite que la información sea procesada correctamente por las aplicaciones de Observabilidad y Seguridad incluidas en Kibana y simplifica la definición del mapping para las fuentes de datos que se ingestan y no tienen una integración a través del Elastic Agent o Beats. Dado que muchas compañías llevan ingestando datos desde antes de la existencia del ECS, es muy común encontrar casos como campos que son de tipo IP ingestados como string y similares; también hemos visto clientes que ingestan información para el SIEM, pero esos datos no se logran ver en la aplicación de Seguridad. Todo esto sucede por no utilizar ECS en la definición del mapping de campos.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Desconocimiento de la existencia de los index templates logs* y metrics* cuando se realiza la ingesta de datos, pues estos templates tienen la definición de ECM construida y usar los templates simplifica la ingesta.</p>
+            <p>Poco procesamiento de los datos a través de Logstash teniendo como premisa su homologación con la documentación del Elastic Common Schema.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>
+            Leer la documentación del Elastic Common Schema para familiarizarse con el mapping correcto y hacer uso de los index templates tanto definidos por Elastic, como construidos de forma personalizada para simplificar el mapping desde la ingesta de datos.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>5. Explosión de mapping:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Esta es una situación común que genera problemas de desempeño e indisponibilidad y es una consecuencia usual del punto anterior. Aquí es necesario explicar un aspecto técnico: La razón por la cuál Elasticsearch es capaz de devolver datos prácticamente en tiempo real, es porque tiene un par de estructuras de datos que se cargan en memoria, la primera se llama inverted index y la segunda doc values.
+    </p>
+    <p>
+      El inverted index mantiene en memoria los datos analizados que se utilizan en los casos de uso de búsqueda a través de tokens. Los Doc Values mantienen en memoria los datos de tipo keyword o exactos, como los que se usan en filtros para casos de observabilidad y seguridad, por ejemplo.
+    </p>
+    <p>
+      El problema de explosión de mapping sucede cuando un índice tiene más de 1000 campos, aquí los shards del índice tienen un trabajo enorme colocando esa cantidad de campos en las dos estructuras de datos, lo que conlleva a un problema grave de desempeño en el cluster.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Los campos que se ingestan cambian desde el origen, esto para el índice son campos nuevos que se adicionan al mapping inicial incrementando los campos totales del índice.</p>
+            <p>Por defecto, Elasticsearch no restringe que si el mapping inicial cambia, los campos nuevos dejen de ser indexados (dynamic mapping), es decir, si un dato lleva 5 campos nuevos que antes no estaban en el índice, estos serán indexados y el mapping del índice tendrá 5 campos más.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>Una vez definido el mapping que tendrá el índice (usando el ECS), deshabilitar el dynamic mapping por cada índice.</li>
+          <li>Validar que la fuente de datos no genere datos fuera del mapping y si lo hace, estos puedan ser omitidos usando Logstash o similares.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>6. Cluster de menos de 3 nodos y Split Brain:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Una de las preguntas más comunes que realizan los clientes es: ¿por qué es necesario tener un cluster de al menos 3 nodos en ambientes productivos?, básicamente es por dos razones:
+    </p>
+    <p>
+      En primer lugar, la gestión de los nodos maestros en Elasticsearch funciona distinto a otras tecnologías, en Elasticsearch no puedes definir qué nodo será el maestro, sino cuáles son elegibles como maestros y la decisión de cuál será el maestro la realiza Elasticsearch mediante una votación entre los elegibles como maestros, para que la votación tenga quórum, se debe tener un número impar de nodos elegibles como maestros y el número impar más pequeño es 3.
+    </p>
+    <p>
+      En segundo lugar, imaginemos un caso común: Tienes un cluster de dos nodos, presentan una desconexión de red entre esos dos nodos y no tienes configurado un parámetro que valida la existencia de menos dos nodos maestros para el inicio del cluster. Lo que sucederá en este caso es que cada nodo subirá como un cluster independiente con datos parciales, esto, a su vez, causará pérdida de la información almacenada. A este comportamiento se le conoce como Split Brain.
+    </p>
+    <p>
+      La mejor forma de garantizar tolerancia a fallos y alta disponibilidad de los datos es tener al menos tres nodos en un entorno productivo.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Utilizar cluster de menos de 3 nodos en entornos productivos.</p>
+            <p>No configurar el parámetro que define los nodos maestros mínimos para levantar el cluster.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>Implementar clusters con al menos 3 nodos de Elasticsearch para entornos productivos.</li>
+          <li>Habilitar el parámetro minimum_master_nodes en la configuración de Elasticsearch.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>7. Ausencia de Snapshots:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Los snapshots son el mecanismo de copias de respaldo de la información almacenada en Elasticsearch; en muchos casos, los clientes tienen la percepción errada que las réplicas de la información en Elasticsearch es suficiente como estrategia de copia de seguridad, sin embargo, el objetivo de las réplicas es ofrecer alta disponibilidad y tolerancia a fallos.
+    </p>
+    <p>
+      Supongamos que se envía una actualización de datos y por error se modifican o eliminan datos, tanto los shard primarios como las réplicas tendrán datos errados; en ese caso, la única forma de recuperar la información será a través de la restauración de un snapshot.
+    </p>
+    <p>
+      Elasticsearch cada vez ofrece más alternativas para alojar snapshots: carpetas compartidas, HDFS de Hadoop, Amazon S3, Azure Storage, Google Cloud Storage, entre otros. Cualquiera de ellos puede ofrecer una solución rápida de copias de respaldo para los datos almacenados en Elasticsearch, esto incluye tanto los índices de datos, como índices de sistema en donde están los dashboards, búsquedas y demás parámetros propios del caso de uso.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Desconocimiento de la simplicidad de implementación de los snapshots.</p>
+            <p>Creencia errónea que las réplicas son suficientes para la seguridad de los datos.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>
+            Definición de una estrategia de copias de respaldo alineadas con los RPO y RTO de la compañía y la implementación de un repositorio de snapshots de acuerdo con los lineamientos de arquitectura de la compañía.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>8. Ciclos de actualización demasiado largos:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Elastic tiene una política de versiones con lanzamientos en intervalos muy cortos; muchos clientes tienen políticas de administración de plataformas con actividades de actualización cada año o cada semestre, dado que Elastic lanza versiones en promedio cada dos meses, tener ciclos de actualización tan largos genera que a la hora de actualizar sea necesaria una migración porque la estructura de los índices, la compatibilidad de las visualizaciones, entre otros, ya no serán compatibles por lo que el proceso de actualización resulta ser tedioso y engorroso.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Temor a realizar cambios por actualizaciones en periodos más cortos por los posibles incidentes que puedan generar y las certificaciones de cambios que se deban realizar.</p>
+            <p>Desconocimiento del detalle del caso de uso y las implicaciones que podría tener una actualización.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>
+            Implementar un ambiente de pruebas de Elasticsearch homólogo al de producción, donde se puedan probar rápidamente las nuevas versiones y acortar los ciclos de actualización de Elastic.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>9. Cluster no operativo por espacio en disco:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Por defecto, cuando el espacio ocupado es del 85% en los nodos de Elasticsearch, automáticamente el cluster coloca todos los índices en estado de solo lectura. Esto genera que el cluster queda inoperativo generando indisponibilidad absoluta.
+    </p>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>Ausencia de monitoreo y alertamiento de las variables de desempeño del cluster.</p>
+            <p>Ausencia de políticas de Index Lifecycle Management (ILM), para garantizar eliminación automática de datos históricos.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>Implementar mecanismos de monitoreo que permitan la identificación oportuna de variables de desempeño que puedan presentar inconvenientes futuros.</li>
+          <li>Gestión del ciclo de vida del índice a través de ILM acordes con lineamientos de retención e históricos.</li>
+          <li>Realizar actividades periódicas de planeación de capacidad para provisionar oportunamente los posibles crecimientos en la ingesta de datos.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <h2>10. Subutilización de las capacidades de Elasticsearch:</h2>
+  </div>
+
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Aunque suene algo contradictorio sobre los puntos anteriores, aquí nos referimos más a los casos de uso. Muchas compañías incursionan en Elastic con un caso de uso específico entre los tres principales:
+    </p>
+    <ul>
+      <li>
+        <h5>Búsqueda (Elastic Enterprise Search):</h5>
+        <ul>
+          <li>Búsqueda en aplicaciones (Elastic App Search)</li>
+          <li>Búsqueda en sitios web (Elastic Site Search)</li>
+          <li>Búsqueda en el sitio de trabajo (Elastic Workplace Search)</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Observabilidad (Elastic Observability):</h5>
+        <ul>
+          <li>Logs</li>
+          <li>Métricas</li>
+          <li>APM (Application Performance Monitoring)</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Seguridad (Elastic Security):</h5>
+        <ul>
+          <li>SIEM</li>
+          <li>Endpoint (XDR)</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="justify-text">
+      Es muy común que un cliente que usa Elastic en un caso de uso, no sepa que puede usar el mismo producto para cualquiera de los otros casos de uso. También es común que un cliente que adopta un caso de uso, no tenga claro que hay características de Elastic que pueden enriquecer su caso actual, algunos ejemplos:
+    </p>
+    <ul>
+      <li>
+        Un cliente que utiliza Elastic para las búsquedas de su e-commerce no sabe que el monitoreo y observabilidad de toda la infraestructura de ese e-commerce puede ser monitoreada y observada por Elastic.
+      </li>
+      <li>
+        Un cliente que utiliza Elastic para centralizar los logs de sus plataformas tecnológicas no sabe que puede usar Elastic Machine Learning para encontrar anomalías y entrenar modelos para generar predicciones sobre los datos.
+      </li>
+    </ul>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <ul>
+      <li>
+        <h5>Causas principales:</h5>
+        <ul>
+          <li>
+            <p>La principal causa es desconocimiento principalmente generado porque las adopciones resuelven una problemática específica.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h5>Estrategias de solución:</h5>
+        <ul>
+          <li>
+            Aprovechar el material disponible de Elastic y NowBit para conocer más sobre las posibilidades al usar Elastic.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="job-detail-desc mx-3">
+    <p class="justify-text">
+      Si llegaste hasta aquí, agradecemos tu lectura y como recompensa, si usas Elastic en tu organización, podemos realizar de forma gratuita un <b>Elastic Quick Review</b> en tu despliegue, simplemente déjanos tus datos en nuestro <a href="/contact#form">formulario de contacto</a>.
+    </p>
+    <p class="justify-text">
+      Finalmente, si alguno de éstos problemas te son familiares y necesitas apoyo para resolverlos, cuenta con nuestro apoyo, ponte en <a href="/contact">contacto</a> con nosotros para ayudarte.
+    </p>
+  </div>
+</div>
+

@@ -1,9 +1,45 @@
-User-agent: *
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
 Allow: /
 
-# Optimization for Google Ads Bot
-User-Agent: AdsBot-Google-Mobile
-User-Agent: AdsBot-Google
+User-agent: facebookexternalhit
+Allow: /
 
+User-agent: LinkedInBot
+Allow: /
 
-Sitemap: https://www.nowbit.co/sitemap.xml
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://nowbit.co/sitemap.xml
+
+# Priority pages for crawling
+# Main services
+Allow: /observabilidad
+Allow: /ciberseguridad  
+Allow: /search-ai
+Allow: /elastic-stack
+Allow: /soc-as-a-service
+Allow: /noc-as-a-service
+
+# Geographic targeting
+Allow: /mexico
+Allow: /colombia
+Allow: /argentina
+Allow: /chile
+Allow: /peru
+Allow: /usa
+Allow: /california
+Allow: /texas
+Allow: /florida
+
