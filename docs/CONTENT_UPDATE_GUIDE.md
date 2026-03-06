@@ -8,11 +8,28 @@ Este manual describe el proceso paso a paso para actualizar **Vacantes** y **Blo
 
 Para entender cómo llegan los cambios a la web, este es el flujo de componentes que intervienen:
 
-1.  **GitHub (Repositorio)**: Donde reside el código fuente y el contenido.
-    *   Repo de desarrollo: `NowBit-Ops/Frontend-Nowbit-Webpage` (branch: `main`).
-2.  **AWS CodePipeline**: Servicio que detecta automáticamente cuando subes cambios a GitHub.
-3.  **AWS S3**: Bucket (`www.nowbit.co`) donde se almacenan los archivos finales que ve el usuario.
-4.  **AWS CloudFront**: CDN que acelera la carga de la página y gestiona los dominios (`nowbit.co`, `nowbit.mx`, `nowbit.ai`).
+1.  **Repositorio de Código Fuente** (`nowbit-ai-website`): Contiene los archivos de programación y contenido original. **Es aquí donde se deben hacer los cambios.**
+    *   URL: `https://github.com/NowBit-Ops/nowbit-ai-website` (branch: `main`).
+2.  **Repositorio de Despliegue** (`Frontend-Nowbit-Webpage`): Contiene los archivos ya compilados (dist) que AWS lee para publicar.
+    *   URL: `https://github.com/NowBit-Ops/Frontend-Nowbit-Webpage` (branch: `main`).
+3.  **AWS CodePipeline**: Servicio que detecta automáticamente cuando subes cambios al **Repositorio de Despliegue**.
+4.  **AWS S3**: Bucket (`www.nowbit.co`) donde se almacenan los archivos finales.
+5.  **AWS CloudFront**: CDN que gestiona los dominios (`nowbit.co`, `nowbit.mx`, `nowbit.ai`).
+
+---
+
+## 🔑 1.5. Configuración Inicial (Solo la primera vez)
+
+Para poder realizar actualizaciones, debes tener ambos repositorios en tu equipo local:
+
+```powershell
+# Clonar el código fuente (Donde trabajarás)
+git clone https://github.com/NowBit-Ops/nowbit-ai-website.git
+
+# Clonar el repositorio de despliegue (Donde publicarás)
+git clone https://github.com/NowBit-Ops/Frontend-Nowbit-Webpage.git
+```
+
 
 ---
 
